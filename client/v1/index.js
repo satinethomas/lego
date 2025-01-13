@@ -4,6 +4,8 @@
 
 console.log('🚀 This is it.');
 
+// Maj: stock - []: tableau, liste 
+// Ici : tableau qui contient deux objets json
 const MY_FAVORITE_DEALERS = [
   {
     'name': 'Dealabs',
@@ -14,9 +16,10 @@ const MY_FAVORITE_DEALERS = [
     'url': 'https://www.avenuedelabrique.com/promotions-et-bons-plans-lego'
   }
 ];
+// Possibilité de rajouter des valeurs d'autres types
 
-console.table(MY_FAVORITE_DEALERS);
-console.log(MY_FAVORITE_DEALERS[0]);
+console.table(MY_FAVORITE_DEALERS); // Afficher sous forme de tableau dans la console
+console.log(MY_FAVORITE_DEALERS[0]); // Afficher l'index 0 de mon tableau dans la console
 
 /**
  * 🌱
@@ -29,6 +32,11 @@ console.log(MY_FAVORITE_DEALERS[0]);
 // 0. I have 2 favorite lego sets shopping communities stored in MY_FAVORITE_DEALERS variable
 // 1. Create a new variable and assign it the link of the lego set with the highest reduction I can find on these 2 websites
 // 2. Log the variable
+
+console.log('Todo 1 \n')
+const bestLink = "https://www.avenuedelabrique.com/lego-movie/70828-le-bus-discotheque/p5212";
+console.log(bestLink);
+
 
 /**
  * 🧱
@@ -43,10 +51,17 @@ console.log(MY_FAVORITE_DEALERS[0]);
 // 1. Create a variable and assign it the number of deals
 // 2. Log the variable
 
+console.log('Todo 2 \n')
+console.log(deals.length);
+
 // 🎯 TODO 3: Website name
 // 1. Create a variable and assign it the list of shopping community name only
 // 2. Log the variable
 // 3. Log how many shopping communities we have
+
+console.log('Todo 3 \n');
+const LIST_COMMUNITIES_NAMES = deals.map(deal => deal.community);
+console.log(LIST_COMMUNITIES_NAMES);
 
 // 🎯 TODO 4: Sort by price
 // 1. Create a function to sort the deals by price
