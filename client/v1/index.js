@@ -83,6 +83,7 @@ console.log(sortedDeals);
 // 1. Create a function to sort the deals by date
 // 2. Create a variable and assign it the list of deals by date from recent to old
 // 3. Log the variable
+
 console.log('Todo 5 \n');
 
 function sortDealsByDate(deals) {
@@ -97,6 +98,16 @@ console.log(sortedDeals2);
 // 🎯 TODO 6: Filter a specific percentage discount range
 // 1. Filter the list of deals between 50% and 75%
 // 2. Log the list
+
+
+function filterDealsByDiscount(deals) {
+  return deals.filter(deal => deal.discount >= 50 && deal.discount <= 75);
+}
+
+const filteredDeals = filterDealsByDiscount(deals);
+
+console.log(filteredDeals);
+
 
 // 🎯 TODO 7: Average percentage discount
 // 1. Determine the average percentage discount of the deals
