@@ -513,9 +513,36 @@ console.log('P25 Price Value:', p25);
 // // 1. Log if we have very old items (true or false)
 // // A very old item is an item `published` more than 3 weeks ago.
 
+console.log('TODO 12 \n'); 
+
+const threeWeeksAgo = new Date();
+threeWeeksAgo.setDate(threeWeeksAgo.getDate() - 21); // 3 weeks ago
+
+const veryOldItems = VINTED.filter(item => {
+    const publishedDate = new Date(item.published); 
+    return publishedDate < threeWeeksAgo;
+});
+
+// Log whether we have very old items
+console.log("Very old items found:", veryOldItems.length > 0);
+
 // 🎯 TODO 13: Find a specific item
 // 1. Find the item with the uuid `f2c5377c-84f9-571d-8712-98902dcbb913`
 // 2. Log the item
+
+console.log('TODO 13 \n'); 
+
+const searchUuid = "f2c5377c-84f9-571d-8712-98902dcbb913";
+
+const itemFound = VINTED.find(item => item.uuid === searchUuid);
+
+// Log the found item
+if (itemFound) {
+    console.log("Item found:", itemFound);
+} else {
+    console.log("Item with UUID not found.");
+}
+
 
 // 🎯 TODO 14: Delete a specific item
 // 1. Delete the item with the uuid `f2c5377c-84f9-571d-8712-98902dcbb913`
