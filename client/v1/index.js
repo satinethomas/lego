@@ -99,6 +99,7 @@ console.log(sortedDeals2);
 // 1. Filter the list of deals between 50% and 75%
 // 2. Log the list
 
+console.log('Todo 6 \n');
 
 function filterDealsByDiscount(deals) {
   return deals.filter(deal => deal.discount >= 50 && deal.discount <= 75);
@@ -112,6 +113,14 @@ console.log(filteredDeals);
 // 🎯 TODO 7: Average percentage discount
 // 1. Determine the average percentage discount of the deals
 // 2. Log the average
+
+console.log('Todo 7 \n');
+
+const totalDiscount = deals.reduce((sum, deal) => sum + deal.discount, 0); //Calcule la somme des réductions avec 'reduce' dans la variable 'totalDiscount' et initialise la somme à 0
+const averageDiscount = totalDiscount / deals.length;
+
+console.log(`Average Discount: ${averageDiscount.toFixed(2)}%`); //Affiche la réduction avec seulement deux décimales
+
 
 /**
  * 🏎
