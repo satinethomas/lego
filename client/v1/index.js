@@ -595,7 +595,12 @@ camera.favorite=true;
 console.log('sealedCamera variable : ', sealedCamera);
 console.log('camera variable', camera);
 
-// 🎯 TODO 11: Compute the profitability
+// Now there is no favorite variable anymore in the sealedCamera variable
+
+// 🎯 TODO 16: Compute the profitability
+
+console.log('TODO 16 \n'); 
+
 // From a specific deal called `deal`
 const deal = {
   'title':  'La caméra Hommage à Walt Disney',
@@ -607,6 +612,19 @@ const deal = {
 // 1. Compute the potential highest profitability based on the VINTED items
 // 2. Log the value
 
+let highestProfitability = 0;
+
+VINTED.forEach(item => {
+    // Calcul de la rentabilité en prenant le prix de détail de `deal`
+    const profitability = deal.retail - item.price;
+    
+    // Mettre à jour la rentabilité maximale si nécessaire
+    if (profitability > highestProfitability) {
+      highestProfitability = profitability;
+    }
+});
+
+console.log("Rentabilité maximale potentielle:", highestProfitability);
 
 
 /**
