@@ -200,7 +200,7 @@ console.log("Deals sorted by date for each community:", communities);
  * 🧥
  */
 
-const VINTED = [
+let VINTED = [
   {
     link: "https://www.vinted.fr/items/5623924966-lego-walt-disney-tribute-camera-43230",
     price: "48.99",
@@ -536,7 +536,6 @@ const searchUuid = "f2c5377c-84f9-571d-8712-98902dcbb913";
 
 const itemFound = VINTED.find(item => item.uuid === searchUuid);
 
-// Log the found item
 if (itemFound) {
     console.log("Item found:", itemFound);
 } else {
@@ -548,7 +547,13 @@ if (itemFound) {
 // 1. Delete the item with the uuid `f2c5377c-84f9-571d-8712-98902dcbb913`
 // 2. Log the new list of items
 
-// 🎯 TODO 5: Save a favorite item
+console.log('TODO 14 \n'); 
+
+VINTED = VINTED.filter(item => item.uuid !== searchUuid); //we changed 'const Vinted' to 'let Vinted' above so that we can change the list
+
+console.log("Updated list of items:", VINTED);
+
+// 🎯 TODO 15: Save a favorite item
 // We declare and assign a variable called `sealedCamera`
 let sealedCamera = {
   link: "https://www.vinted.fr/items/5563396347-lego-43230-omaggio-a-walter-disney-misb",
