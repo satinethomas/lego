@@ -145,14 +145,51 @@ console.log(`Average Discount: ${averageDiscount.toFixed(2)}%`); //Affiche la r�
 // 2. Log the variable
 // 3. Log the number of deals by community
 
+console.log('TODO 8 \n');
+
+const communities = {};
+
+// Grouper les deals par communauté
+deals.forEach(deal => {
+  const communityName = deal.community;
+
+  if (!communities[communityName]) {
+    communities[communityName] = [];
+  }
+
+  communities[communityName].push(deal);
+});
+
+console.log("Deals grouped by community:", communities);
+
+// Afficher le nombre de deals par communauté
+for (const community in communities) {
+  console.log(`${community}: ${communities[community].length} deals`);
+}
+
 // 🎯 TODO 9: Sort by price for each community
 // 1. For each community, sort the deals by discount price, from highest to lowest
 // 2. Log the sort
+
+console.log('TODO 9 \n');
+
+for (const community in communities) {
+  communities[community].sort((a, b) => b.price - a.price);
+}
+
+console.log("Deals sorted by price for each community:", communities);
 
 // 🎯 TODO 10: Sort by date for each community
 // 1. For each set, sort the deals by date, from old to recent
 // 2. Log the sort
 
+console.log('TODO 10 \n');
+
+for (const community in communities) {
+  communities[community].sort((a, b) => new Date(a.date) - new Date(b.date));
+}
+
+console.log("Deals sorted by date for each community:", communities);
 
 /**
  * 🧥
