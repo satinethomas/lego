@@ -554,6 +554,9 @@ VINTED = VINTED.filter(item => item.uuid !== searchUuid); //we changed 'const Vi
 console.log("Updated list of items:", VINTED);
 
 // 🎯 TODO 15: Save a favorite item
+
+console.log('TODO 15 \n'); 
+
 // We declare and assign a variable called `sealedCamera`
 let sealedCamera = {
   link: "https://www.vinted.fr/items/5563396347-lego-43230-omaggio-a-walter-disney-misb",
@@ -570,7 +573,12 @@ let camera = sealedCamera;
 camera.favorite = true;
 
 // 1. Log `sealedCamera` and `camera` variables
+console.log('sealedCamera variable : ', sealedCamera);
+console.log('camera variable', camera);
+
 // 2. What do you notice?
+
+//It is exactly the same
 
 // we make (again) a new assignment again
 sealedCamera = {
@@ -582,7 +590,10 @@ sealedCamera = {
 };
 
 // 3. Update `camera` property with `favorite` to true WITHOUT changing sealedCamera properties
+camera.favorite=true;
 
+console.log('sealedCamera variable : ', sealedCamera);
+console.log('camera variable', camera);
 
 // 🎯 TODO 11: Compute the profitability
 // From a specific deal called `deal`
