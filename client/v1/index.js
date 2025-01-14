@@ -482,6 +482,33 @@ const VINTED = [
 // 3. Compute the p25 price value of the listing
 // The p25 value (25th percentile) is the lower value expected to be exceeded in 25% of the vinted items
 
+console.log('TODO 11 \n'); 
+
+const LIST_PRICES = [...new Set(VINTED.map(VINTED => VINTED.price))];
+console.log(LIST_PRICES);
+
+// Function to compute average
+function computeAverage(LIST_PRICES) {
+  const sum = LIST_PRICES.reduce((total, price) => total + price, 0);
+  return sum / LIST_PRICES.length;
+}
+
+// Function to compute percentile (p5 or p25)
+function computePercentile(LIST_PRICES, percentile) {
+  LIST_PRICES.sort((a, b) => a - b); // Sort the prices in ascending order
+  const index = Math.floor((percentile / 100) * LIST_PRICES.length);
+  return LIST_PRICES[index];
+}
+
+// Compute the values
+const average = computeAverage(LIST_PRICES);
+const p5 = computePercentile(LIST_PRICES, 5); // 5th percentile
+const p25 = computePercentile(LIST_PRICES, 25); // 25th percentile
+
+console.log('Average Price:', average);
+console.log('P5 Price Value:', p5);
+console.log('P25 Price Value:', p25);
+
 // 🎯 TODO 12: Very old listed items
 // // 1. Log if we have very old items (true or false)
 // // A very old item is an item `published` more than 3 weeks ago.
