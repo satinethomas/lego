@@ -153,8 +153,16 @@ selectShow.addEventListener('change', async (event) => {
   render(currentDeals, currentPagination);
 });
 
+/**
+ * Select the page to display
+ */
 selectPage.addEventListener('change', async (event) => {
-  console.log('select page');
+  const goToPage = parseInt(event.target.value); // calculé dans l'api
+  console.log(goToPage);
+  const deals = await fetchDeals(goToPage, parseInt(selectShow.value));// selectShow : ce qu'on a cliqué
+  setCurrentDeals(deals);
+  render(currentDeals, currentPagination);
+
 });
 
 /**
