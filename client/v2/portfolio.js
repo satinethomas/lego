@@ -25,7 +25,7 @@ This endpoint accepts the following optional query string parameters:
 let currentDeals = [];
 let currentPagination = {};
 
-// instantiate the selectors
+// instantiate the selectors (CSS)
 const selectShow = document.querySelector('#show-select');
 const selectPage = document.querySelector('#page-select');
 const selectLegoSetIds = document.querySelector('#lego-set-id-select');
@@ -37,6 +37,8 @@ const spanNbDeals = document.querySelector('#nbDeals');
  * @param {Array} result - deals to display
  * @param {Object} meta - pagination meta info
  */
+
+
 const setCurrentDeals = ({result, meta}) => {
   currentDeals = result;
   currentPagination = meta;
@@ -150,6 +152,37 @@ selectShow.addEventListener('change', async (event) => {
   setCurrentDeals(deals);
   render(currentDeals, currentPagination);
 });
+
+selectPage.addEventListener('change', async (event) => {
+  console.log('select page');
+});
+
+/**
+ * Sort deals by discount
+ */
+const sortByBestDiscount = () => {
+  currentDeals.sort((a, b) => b.discount - a.discount); 
+  render(currentDeals, currentPagination);
+};
+document.querySelector('#best-discount').addEventListener('click', sortByBestDiscount);
+
+/**
+ * Sort deals by most commented
+ */
+const sortByMostCommented = () => {
+  currentDeals.sort((a, b) => b.comments - a.comments); 
+  render(currentDeals, currentPagination);
+};
+document.querySelector('#most-commented').addEventListener('click', sortByMostCommented);
+
+/**
+ * Sort deals by hot deals
+ */
+const sortByHotDeals = () => {
+  currentDeals.sort((a, b) => b.temperature - a.temperature); 
+  render(currentDeals, currentPagination);
+};
+document.querySelector('#hot-deals').addEventListener('click', sortByHotDeals);
 
 document.addEventListener('DOMContentLoaded', async () => {
   const deals = await fetchDeals();
