@@ -615,10 +615,8 @@ const deal = {
 let highestProfitability = 0;
 
 VINTED.forEach(item => {
-    // Calcul de la rentabilité en prenant le prix de détail de `deal`
     const profitability = deal.retail - item.price;
     
-    // Mettre à jour la rentabilité maximale si nécessaire
     if (profitability > highestProfitability) {
       highestProfitability = profitability;
     }
@@ -636,3 +634,7 @@ console.log("Rentabilité maximale potentielle:", highestProfitability);
 // 🎯 LAST TODO: Save in localStorage
 // 1. Save MY_FAVORITE_DEALERS in the localStorage
 // 2. log the localStorage
+
+localStorage.setItem('MY_FAVORITE_DEALERS', JSON.stringify(MY_FAVORITE_DEALERS));
+
+console.log("Contenu de MY_FAVORITE_DEALERS dans localStorage:", JSON.parse(localStorage.getItem('MY_FAVORITE_DEALERS')));
