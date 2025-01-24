@@ -31,6 +31,7 @@ const selectPage = document.querySelector('#page-select');
 const selectLegoSetIds = document.querySelector('#lego-set-id-select');
 const sectionDeals= document.querySelector('#deals');
 const spanNbDeals = document.querySelector('#nbDeals');
+const selectPrice = document.querySelector('#sort-select');
 
 /**
  * Set global value
@@ -191,6 +192,25 @@ const sortByHotDeals = () => {
   render(currentDeals, currentPagination);
 };
 document.querySelector('#hot-deals').addEventListener('click', sortByHotDeals);
+
+
+/**
+ * Sort deals by selected criteria (price ascending or descending)
+ */
+const sortDealsByPrice = () => {
+  const sortValue = selectPrice.value; // Récupère la valeur sélectionnée
+  if (sortValue === 'price-asc') {
+    currentDeals.sort((a, b) => a.price - b.price); // Tri par prix croissant
+  } else if (sortValue === 'price-desc') {
+    currentDeals.sort((a, b) => b.price - a.price); // Tri par prix décroissant
+  }
+  render(currentDeals, currentPagination); // Met à jour l'affichage
+};
+
+// Ajout de l'écouteur d'événements pour le tri
+selectPrice.addEventListener('change', sortDealsByPrice);
+
+
 
 document.addEventListener('DOMContentLoaded', async () => {
   const deals = await fetchDeals();
