@@ -195,20 +195,25 @@ document.querySelector('#hot-deals').addEventListener('click', sortByHotDeals);
 
 
 /**
- * Sort deals by selected criteria (price ascending or descending)
+ * Sort deals by selected criteria (price or date)
  */
-const sortDealsByPrice = () => {
+const sortDeals = () => {
   const sortValue = selectPrice.value; // Récupère la valeur sélectionnée
   if (sortValue === 'price-asc') {
     currentDeals.sort((a, b) => a.price - b.price); // Tri par prix croissant
   } else if (sortValue === 'price-desc') {
     currentDeals.sort((a, b) => b.price - a.price); // Tri par prix décroissant
+  } else if (sortValue === 'date-asc') {
+    currentDeals.sort((a, b) => new Date(a.published) - new Date(b.published)); // Tri par date croissante
+  } else if (sortValue === 'date-desc') {
+    currentDeals.sort((a, b) => new Date(b.published) - new Date(a.published)); // Tri par date décroissante
   }
-  render(currentDeals, currentPagination); // Met à jour l'affichage
+  render(currentDeals, currentPagination); // Rafraîchit l'affichage
 };
 
-// Ajout de l'écouteur d'événements pour le tri
-selectPrice.addEventListener('change', sortDealsByPrice);
+// Ajout de l'écouteur d'événements
+selectPrice.addEventListener('change', sortDeals);
+
 
 
 
