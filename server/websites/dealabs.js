@@ -9,7 +9,7 @@ const cheerio = require('cheerio'); //analyser et manipuler le HTML (commme le d
 const parse = data => { //data: chaîne de caractères contenant le HTML de la page web
   const $ = cheerio.load(data, {'xmlMode': true}); //extraire et charger le contenu HTML + cheerio pour analyser le contenu
 
-  return $('div.prods a') // sélectionne tous les <a> qui sont dans un div avec la classe .prods
+  return $('div.js-threadList article') // sélectionne tous les <a> qui sont dans un div avec la classe .prods
     .map((i, element) => { // parcourt tous les 'a' trouvés 
       const price = parseInt( //extraction du prix (convertit le prix en nombre entier)
         $(element)
