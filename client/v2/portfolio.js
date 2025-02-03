@@ -214,6 +214,77 @@ const sortDeals = () => {
 // Ajout de l'écouteur d'événements
 selectPrice.addEventListener('change', sortDeals);
 
+/**
+ * Display Vinted sales
+ */
+
+/**
+ * Fetch sales for a specific Lego set id
+ * @param {String} setId - The id of the Lego set
+ * @returns {Array} - List of sales for the given set id
+ */
+const fetchSales = async (setId) => {
+  try {
+    const response = await fetch(`https://lego-api-blue.vercel.app/sales?id=${setId}`);
+    const body = await response.json();
+
+    if (!body.success) {
+      console.error('Failed to fetch sales:', body);
+      return [];
+    }
+
+    return body.data;
+  } catch (error) {
+    console.error('Error fetching sales:', error);
+    return [];
+  }
+};
+
+/**
+ * Render sales for a specific Lego set id
+ * @param {Array} sales - List of sales to display
+ */
+const renderSales = (sales) => {
+  const salesContainer = document.querySelector('#lego'); // Conteneur pour afficher les ventes
+  const salesHTML = sales.map(sale => `
+    <div class="sale">
+      <span>ID: ${sale.id}</span>
+      <span>Price: €${sale.price}</span>
+      <span>Date: ${sale.date}</span>
+      <a href="${sale.link}" target="_blank">View Sale</a>
+    </div>
+  `).join('');
+
+};
+
+/**
+ * Fetch and display sales when a Lego set id is selected
+ */
+document.querySelector('#lego-set-id-select').addEventListener('change', async (event) => {
+  const selectedSetId = event.target.value;
+
+  if (!selectedSetId) {
+    console.warn('No set ID selected.');
+    return;
+  }
+
+  const sales = await fetchSales(selectedSetId);
+
+  // Vérification si les ventes existent et sont valides
+  if (!Array.isArray(sales) || sales.length === 0) {
+    console.warn('No sales found for this set ID.');
+    renderSales([]); // Affiche un message "No sales available"
+    return;
+  }
+
+  // Log des clés du premier élément pour débogage
+  console.log('Keys in first sale object:', Object.keys(sales[0]));
+
+  // Affiche les ventes
+  renderSales(sales);
+});
+
+
 
 
 
