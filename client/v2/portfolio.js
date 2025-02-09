@@ -214,26 +214,68 @@ const sortDeals = () => {
 // Ajout de l'écouteur d'événements
 selectPrice.addEventListener('change', sortDeals);
 
+
 /**
  * Display Vinted sales
  */
+const renderSales = (sales) => {
+  console.log('renderSales() function called with:', sales);
+
+  let salesContainer = document.querySelector('#sales-section');
+
+  // Si la section n'existe pas encore, on la crée
+  if (!salesContainer) {
+    salesContainer = document.createElement('section');
+    salesContainer.id = 'sales-section';
+    salesContainer.innerHTML = '<h2>Vinted Sales</h2>';
+    document.body.appendChild(salesContainer);
+  }
+
+  // Vérifier si on a bien des ventes à afficher
+  if (!sales || sales.length === 0) {
+    console.warn('No sales available');
+    salesContainer.innerHTML = '<h2>Vinted Sales</h2><p>No sales available</p>';
+    return;
+  }
+
+  // Générer le HTML des ventes
+  const salesHTML = sales.map(sale => `
+    <div class="sale">
+      <span><strong>${sale.title}</strong></span>
+      <span>Price: <strong>€${sale.price}</strong></span>
+      <span>Date: ${new Date(sale.published).toLocaleDateString()}</span>
+      <a href="${sale.link}" target="_blank">View Sale</a>
+    </div>
+  `).join('');
+
+  // Mettre à jour le contenu
+  salesContainer.innerHTML = `<h2>Vinted Sales</h2>${salesHTML}`;
+};
 
 /**
- * Fetch sales for a specific Lego set id
- * @param {String} setId - The id of the Lego set
- * @returns {Array} - List of sales for the given set id
+ * Fetch sales for the selected Lego set
  */
-const fetchSales = async (setId) => {
+const fetchSales = async (legoSetId) => {
   try {
-    const response = await fetch(`https://lego-api-blue.vercel.app/sales?id=${setId}`);
+    const url = `https://lego-api-blue.vercel.app/sales?id=${legoSetId}`;
+    console.log('Fetching sales from:', url);
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      console.error('HTTP Error:', response.status, response.statusText);
+      return [];
+    }
+
     const body = await response.json();
+    console.log('API Response:', body);
 
     if (!body.success) {
       console.error('Failed to fetch sales:', body);
       return [];
     }
 
-    return body.data;
+    return body.data.result;
   } catch (error) {
     console.error('Error fetching sales:', error);
     return [];
@@ -241,50 +283,26 @@ const fetchSales = async (setId) => {
 };
 
 /**
- * Render sales for a specific Lego set id
- * @param {Array} sales - List of sales to display
+ * Fetch and display sales for the selected Lego set when the page loads or when a new set is selected
  */
-const renderSales = (sales) => {
-  const salesContainer = document.querySelector('#lego'); // Conteneur pour afficher les ventes
-  const salesHTML = sales.map(sale => `
-    <div class="sale">
-      <span>ID: ${sale.id}</span>
-      <span>Price: €${sale.price}</span>
-      <span>Date: ${sale.date}</span>
-      <a href="${sale.link}" target="_blank">View Sale</a>
-    </div>
-  `).join('');
+document.addEventListener('DOMContentLoaded', () => {
+  const selectLegoSetIds = document.querySelector('#lego-set-id-select');
 
-};
+  // Lors de la sélection d'un set LEGO, récupérer les ventes correspondantes
+  selectLegoSetIds.addEventListener('change', async () => {
+    const selectedId = selectLegoSetIds.value; // Récupérer l'ID du set LEGO sélectionné
+    if (selectedId) {
+      const sales = await fetchSales(selectedId);
+      renderSales(sales);
+    }
+  });
 
-/**
- * Fetch and display sales when a Lego set id is selected
- */
-document.querySelector('#lego-set-id-select').addEventListener('change', async (event) => {
-  const selectedSetId = event.target.value;
-
-  if (!selectedSetId) {
-    console.warn('No set ID selected.');
-    return;
+  // Initialiser avec l'ID du set sélectionné au chargement de la page
+  const initialId = selectLegoSetIds.value;
+  if (initialId) {
+    fetchSales(initialId).then(sales => renderSales(sales));
   }
-
-  const sales = await fetchSales(selectedSetId);
-
-  // Vérification si les ventes existent et sont valides
-  if (!Array.isArray(sales) || sales.length === 0) {
-    console.warn('No sales found for this set ID.');
-    renderSales([]); // Affiche un message "No sales available"
-    return;
-  }
-
-  // Log des clés du premier élément pour débogage
-  console.log('Keys in first sale object:', Object.keys(sales[0]));
-
-  // Affiche les ventes
-  renderSales(sales);
 });
-
-
 
 
 
