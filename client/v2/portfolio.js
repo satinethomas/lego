@@ -80,10 +80,11 @@ const renderDeals = deals => {
   const template = deals
     .map(deal => {
       return `
-      <div class="deal" id=${deal.uuid}>
+      <div class="deal" id="${deal.uuid}">
         <span>${deal.id}</span>
         <a href="${deal.link}">${deal.title}</a>
         <span>${deal.price}</span>
+        <button class="favorite-btn" data-id="${deal.uuid}">Add to Favorites</button>
       </div>
     `;
     })
@@ -94,6 +95,7 @@ const renderDeals = deals => {
   sectionDeals.innerHTML = '<h2>Deals</h2>';
   sectionDeals.appendChild(fragment);
 };
+
 
 /**
  * Render page selector
@@ -215,28 +217,39 @@ const sortDeals = () => {
 selectPrice.addEventListener('change', sortDeals);
 
 
+
 /**
  * Display Vinted sales
  */
 const renderSales = (sales) => {
   console.log('renderSales() function called with:', sales);
 
-  let salesContainer = document.querySelector('#sales-section');
+  // Récupérer la section des ventes, créer une nouvelle section si elle n'existe pas
+  let salesContainer = document.querySelector('#vinted-sales-section');
 
   // Si la section n'existe pas encore, on la crée
   if (!salesContainer) {
     salesContainer = document.createElement('section');
-    salesContainer.id = 'sales-section';
-    salesContainer.innerHTML = '<h2>Vinted Sales</h2>';
+    salesContainer.id = 'vinted-sales-section'; // ID de la nouvelle section pour les ventes
     document.body.appendChild(salesContainer);
   }
+
+  // Ajouter un titre pour les ventes
+  salesContainer.innerHTML = '<h2>Vinted Sales</h2>';
 
   // Vérifier si on a bien des ventes à afficher
   if (!sales || sales.length === 0) {
     console.warn('No sales available');
-    salesContainer.innerHTML = '<h2>Vinted Sales</h2><p>No sales available</p>';
+    document.querySelector('#nbSales').textContent = '0'; // Afficher 0 ventes
+    salesContainer.innerHTML += '<p>No sales available</p>';
     return;
   }
+
+  // Trier les ventes par date (de la plus ancienne à la plus récente)
+  sales.sort((a, b) => new Date(a.published) - new Date(b.published));
+
+  // Mettre à jour le nombre total de ventes dans l'élément #nbSales
+  document.querySelector('#nbSales').textContent = sales.length;
 
   // Générer le HTML des ventes
   const salesHTML = sales.map(sale => `
@@ -248,8 +261,67 @@ const renderSales = (sales) => {
     </div>
   `).join('');
 
-  // Mettre à jour le contenu
-  salesContainer.innerHTML = `<h2>Vinted Sales</h2>${salesHTML}`;
+  // Ajouter les ventes sous le titre "Vinted Sales"
+  salesContainer.innerHTML += salesHTML;
+
+  // Calculer les valeurs des indicateurs de prix
+  updatePriceIndicators(sales);
+};
+
+/**
+ * Update price indicators (average, p5, p25, p50, lifetime)
+ */
+const updatePriceIndicators = (sales) => {
+  const prices = sales.map(sale => sale.price).sort((a, b) => a - b);
+  
+  // Calcul de l'indicateur moyen (average)
+  const averagePrice = calculateAverage(prices);
+  
+  // Calcul des percentiles (p5, p25, p50)
+  const p5Price = calculatePercentile(prices, 5);
+  const p25Price = calculatePercentile(prices, 25);
+  const p50Price = calculatePercentile(prices, 50);
+
+  // Calcul de la "Lifetime value" en jours
+  const lifetimeValue = calculateLifetime(sales);
+
+  // Mettre à jour l'HTML avec les valeurs calculées
+  document.querySelector('#nbSales').textContent = sales.length; // nbSales
+  document.querySelector('#p5Price').textContent = p5Price; // p5
+  document.querySelector('#p25Price').textContent = p25Price; // p25
+  document.querySelector('#p50Price').textContent = p50Price; // p50
+  document.querySelector('#lifetimeValue').textContent = `${lifetimeValue} days`; // Lifetime value
+};
+
+/**
+ * Calculate the average price
+ */
+const calculateAverage = (prices) => {
+  const sum = prices.reduce((acc, price) => acc + price, 0);
+  return (sum / prices.length).toFixed(2);
+};
+
+/**
+ * Calculate the percentile value from a sorted array
+ */
+const calculatePercentile = (arr, percentile) => {
+  const index = Math.floor((percentile / 100) * arr.length);
+  return arr[index];
+};
+
+/**
+ * Calculate the lifetime value (the number of days the set has been listed)
+ */
+const calculateLifetime = (sales) => {
+  if (sales.length === 0) return 0;
+  
+  const firstSaleDate = new Date(sales[0].published);
+  const latestSaleDate = new Date(sales[sales.length - 1].published);
+  
+  const difference = latestSaleDate - firstSaleDate; // Difference en millisecondes
+  const lifetime = Math.floor(difference / (1000 * 60 * 60 * 24)); // Convertir en jours
+  
+  return lifetime;
 };
 
 /**
@@ -303,6 +375,40 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchSales(initialId).then(sales => renderSales(sales));
   }
 });
+
+
+/**
+ * Favourites
+ */
+// Gestion du clic sur le bouton "Ajouter aux favoris"
+document.addEventListener('click', (event) => {
+  if (event.target && event.target.classList.contains('favorite-btn')) {
+    const dealId = event.target.getAttribute('data-id');
+    toggleFavorite(dealId); // Ajouter ou retirer des favoris
+  }
+});
+
+// Liste des favoris (cela pourrait être un tableau dans le localStorage ou une variable globale)
+let favorites = [];
+
+// Fonction pour ajouter ou retirer des favoris
+const toggleFavorite = (dealId) => {
+  const index = favorites.indexOf(dealId);
+  
+  if (index === -1) {
+    favorites.push(dealId); // Ajouter aux favoris
+  } else {
+    favorites.splice(index, 1); // Retirer des favoris
+  }
+  
+  console.log('Favorites:', favorites); // Afficher la liste des favoris
+};
+
+document.querySelector('#filter-favorites').addEventListener('click', () => {
+  const favoriteDeals = currentDeals.filter(deal => favorites.includes(deal.uuid));
+  render(favoriteDeals, currentPagination); // Afficher uniquement les favoris
+});
+
 
 
 
