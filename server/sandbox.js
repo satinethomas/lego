@@ -1,32 +1,13 @@
 /* eslint-disable no-console, no-process-exit */
 const avenuedelabrique = require('./websites/avenuedelabrique');
-const dealabs = require('./websites/dealabs');
 
-async function sandbox(website, url) {
+async function sandbox (website = 'https://www.avenuedelabrique.com/nouveautes-lego') {
   try {
-    if (!website || !url) {
-      console.log('You must provide both a website and an URL.');
-      process.exit(1);
-    }
-
     console.log(`browsing ${website} website`);
 
-    let deals;
+    const deals = await avenuedelabrique.scrape(website);
 
-    // Switch pour choisir le site en fonction de l'argument 'website'
-    switch (website.toLowerCase()) {
-      case 'avenuedelabrique':
-        deals = await avenuedelabrique.scrape(url);
-        break;
-      case 'dealabs':
-        deals = await dealabs.scrape(url);
-        break;
-      default:
-        console.log('Website not recognized. Please choose "avenuedelabrique" or "dealabs".');
-        process.exit(1);
-    }
-
-    console.log(deals); // Affiche les résultats
+    console.log(deals);
     console.log('done');
     process.exit(0);
   } catch (e) {
@@ -35,9 +16,6 @@ async function sandbox(website, url) {
   }
 }
 
-// Récupère les arguments de la ligne de commande
-const [,, eshop, url] = process.argv;
+const [,, eshop] = process.argv;
 
-// Appelle la fonction sandbox avec le nom du site et l'URL en argument
-sandbox(eshop, url);
-
+sandbox(eshop);
