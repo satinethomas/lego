@@ -15,24 +15,43 @@ const parse = data => {
 
     try {
       const parsedData = JSON.parse(jsonData);
-
-      // Vérifie si les données contiennent les informations nécessaires
       if (!parsedData.props || !parsedData.props.thread) return null;
 
       const thread = parsedData.props.thread;
+      const price = thread.price;
+      const originalPrice = thread.nextBestPrice;
+
+      // Vérifier que le prix actuel est défini et différent de 0
+      if (!price || price === 0) return null;
+
+      // Vérifier que le prix original est bien défini et supérieur au prix actuel
+      let discount = null;
+      if (originalPrice && originalPrice > price) {
+        discount = Number((((originalPrice - price) * 100) / originalPrice).toFixed(0));
+      }
+
+      // Construction manuelle de l'URL de l'image
+      let imageUrl = null;
+      if (thread.mainImage) {
+        const { path, name, ext } = thread.mainImage;
+        imageUrl = `https://static.dealabs.com/${path}/${name}.${ext}`;
+      }
 
       return {
-        title: thread.title, // Nom du produit
-        price: thread.price, // Prix
-        discount: thread.percentage, // Réduction en %
-        link: thread.link, // Lien vers l'offre
-        image: thread.mainImage ? `https://static.dealabs.com/${thread.mainImage.uid}` : null
+        title: thread.title,
+        price: price, 
+        originalPrice: originalPrice, 
+        discount: discount,
+        temperature: thread.temperature,
+        nb_comments: thread.commentCount,
+        link: thread.link,
+        image: imageUrl
       };
     } catch (error) {
       console.error("Erreur de parsing JSON :", error);
       return null;
     }
-  }).get();
+  }).get().filter(deal => deal !== null); // Filtrer les null pour éviter les entrées invalides
 };
 
 /**
