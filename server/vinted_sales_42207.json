@@ -1,0 +1,112 @@
+[
+  {
+    "id": 5889597607,
+    "title": "Lego 42207 Ferrari SF 24",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "195.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5889597607",
+    "photo": null,
+    "total_item_price": {
+      "amount": "205.45",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 144467463,
+      "login": "bobbrick",
+      "profile_url": "https://www.vinted.fr/member/144467463-bobbrick",
+      "photo": null
+    }
+  },
+  {
+    "id": 5906143866,
+    "title": "LEGO 42207 - Ferrari SF-24 -",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "200.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5906143866",
+    "photo": null,
+    "total_item_price": {
+      "amount": "210.7",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf sans étiquette",
+    "user": {
+      "id": 87257255,
+      "login": "luca0880",
+      "profile_url": "https://www.vinted.fr/member/87257255-luca0880",
+      "photo": "https://images1.vinted.net/t/02_0216b_rqFRtbiYbNjuxxHAdhUgRftz/f800/1698406869.jpeg?s=949ef53f37e28558e8dab668871a23a5dece9846"
+    }
+  },
+  {
+    "id": 5895017002,
+    "title": "42207 Lego Technic F1 Ferrari SF 24",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "230.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5895017002",
+    "photo": null,
+    "total_item_price": {
+      "amount": "242.2",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf sans étiquette",
+    "user": {
+      "id": 104350014,
+      "login": "affrustai31",
+      "profile_url": "https://www.vinted.fr/member/104350014-affrustai31",
+      "photo": "https://images1.vinted.net/t/03_01994_UBQGV2EPSNXib8MdEYTkYzhC/f800/1694207619.jpeg?s=42415bec40dcb56eeab64659c4c744b4aa32d507"
+    }
+  },
+  {
+    "id": 5894834180,
+    "title": "Lego Technic 42207 - Ferrari SF-24",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "230.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5894834180",
+    "photo": null,
+    "total_item_price": {
+      "amount": "242.2",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 55486402,
+      "login": "marc-chris",
+      "profile_url": "https://www.vinted.fr/member/55486402-marc-chris",
+      "photo": "https://images1.vinted.net/t/04_01cc2_nxeRSeg5k7EAD35akJX4GWxj/f800/1738326708.jpeg?s=1f83055a692df0f1fd7bd59bce97f54c4ee69099"
+    }
+  },
+  {
+    "id": 5900779273,
+    "title": "4x Ruote Realistiche Complete per LEGO 42121 McLaren / LEGO 42171 Mercedes",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "20.9",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5900779273",
+    "photo": null,
+    "total_item_price": {
+      "amount": "22.65",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf sans étiquette",
+    "user": {
+      "id": 120252568,
+      "login": "elbueno90",
+      "profile_url": "https://www.vinted.fr/member/120252568-elbueno90",
+      "photo": "https://images1.vinted.net/t/01_025f3_ooK12awH54s1Aj3hqQ3qewyV/f800/1733239296.jpeg?s=d138f88f425109d6e14981d87d8375c86b57fec6"
+    }
+  }
+]

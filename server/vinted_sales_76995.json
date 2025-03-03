@@ -1,0 +1,112 @@
+[
+  {
+    "id": 4194186842,
+    "title": " Boîte vide 76995",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "2.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/4194186842",
+    "photo": null,
+    "total_item_price": {
+      "amount": "2.8",
+      "currency_code": "EUR"
+    },
+    "status": "Très bon état",
+    "user": {
+      "id": 34169560,
+      "login": "fripounet67",
+      "profile_url": "https://www.vinted.fr/member/34169560-fripounet67",
+      "photo": "https://images1.vinted.net/t/02_01580_ZCHnFpnHw73Amtm4t5tGYggv/f800/1605248603.jpeg?s=c747ff47c05645bad87cd6047d0eaaad4fce8bb3"
+    }
+  },
+  {
+    "id": 5779610959,
+    "title": "Lego sonic 76995 en boite neuf",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "23.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5779610959",
+    "photo": null,
+    "total_item_price": {
+      "amount": "24.85",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 63527225,
+      "login": "yoshiflo",
+      "profile_url": "https://www.vinted.fr/member/63527225-yoshiflo",
+      "photo": "https://images1.vinted.net/t/02_01707_FVBtpEHPDC3FgcJtEoh8VHoZ/f800/1623761868.jpeg?s=f72cdc576bf4119da184ba8ae2f209a826c9853e"
+    }
+  },
+  {
+    "id": 5593512186,
+    "title": "Lot boîtes vides LEGO",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "20.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5593512186",
+    "photo": null,
+    "total_item_price": {
+      "amount": "21.7",
+      "currency_code": "EUR"
+    },
+    "status": "Très bon état",
+    "user": {
+      "id": 24996766,
+      "login": "loh24",
+      "profile_url": "https://www.vinted.fr/member/24996766-loh24",
+      "photo": "https://images1.vinted.net/t/02_01913_69SbxeRn5uqUu9j67C9nqSun/f800/1605223234.jpeg?s=f0c7786486dfe331f217c20a5b622c4edd4ffd9c"
+    }
+  },
+  {
+    "id": 5905161840,
+    "title": "Gros lot Lego Sonic",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "200.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5905161840",
+    "photo": null,
+    "total_item_price": {
+      "amount": "210.7",
+      "currency_code": "EUR"
+    },
+    "status": "Très bon état",
+    "user": {
+      "id": 9539538,
+      "login": "paupo42",
+      "profile_url": "https://www.vinted.fr/member/9539538-paupo42",
+      "photo": "https://images1.vinted.net/t/03_00ad8_jymCENcwWffh14Q7Vn5SySN9/f800/1627545063.jpeg?s=ca70f9629bfe14ad38cc19975449409de72a4da8"
+    }
+  },
+  {
+    "id": 5630250162,
+    "title": "je vends tout ma collection lego",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "3000.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5630250162",
+    "photo": null,
+    "total_item_price": {
+      "amount": "3060.0",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf sans étiquette",
+    "user": {
+      "id": 246395477,
+      "login": "jonathan192003",
+      "profile_url": "https://www.vinted.fr/member/246395477-jonathan192003",
+      "photo": "https://images1.vinted.net/t/04_009ab_QV4cY596fvYJKbJqvZ7ezcgf/f800/1735915475.jpeg?s=9183e3af9ee1ccff18fa531505776f6350328754"
+    }
+  }
+]

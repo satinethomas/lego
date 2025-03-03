@@ -14,14 +14,14 @@ async function scrape(url, userAgent, cookie) {
   };
 
   try {
+    
     const response = await axios.get(url, { headers });
     const items = response.data.items || [];
-
     const sales = items.map(item => ({
       id: item.id,
       title: item.title,
+      brand_title : item.brand_title,
       price: item.price,
-      discount: item.discount || 0,
       url: `https://www.vinted.fr/items/${item.id}`,
       photo: item.photos?.[0]?.url || null,
       total_item_price: item.total_item_price,
@@ -33,6 +33,7 @@ async function scrape(url, userAgent, cookie) {
         photo: item.user?.photo?.url || null,
       },
     }));
+    
 
     return sales;
   } catch (error) {
