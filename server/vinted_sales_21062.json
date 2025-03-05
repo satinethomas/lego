@@ -1,5 +1,27 @@
 [
   {
+    "id": 5918280712,
+    "title": "Lego fontana trevi autografato dal designer",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "290.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5918280712",
+    "photo": null,
+    "total_item_price": {
+      "amount": "305.2",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 49963003,
+      "login": "luca280380",
+      "profile_url": "https://www.vinted.fr/member/49963003-luca280380",
+      "photo": "https://images1.vinted.net/t/02_00714_FQe9WQjz1v2Zj56gRBp3t87g/f800/1610619209.jpeg?s=7d33f09d8133f547e7cff0debde7c13e16ebbcc6"
+    }
+  },
+  {
     "id": 5889658227,
     "title": "Lego 21062 fontana di trevi",
     "brand_title": "LEGO",
@@ -22,25 +44,91 @@
     }
   },
   {
-    "id": 5897837142,
-    "title": "Lego architecture 21062 fontana di trevi",
+    "id": 5913620659,
+    "title": "Lego fontana di trevi",
     "brand_title": "LEGO",
     "price": {
-      "amount": "135.0",
+      "amount": "169.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5897837142",
+    "url": "https://www.vinted.fr/items/5913620659",
     "photo": null,
     "total_item_price": {
-      "amount": "142.45",
+      "amount": "178.15",
       "currency_code": "EUR"
     },
     "status": "Neuf avec étiquette",
     "user": {
-      "id": 81220939,
-      "login": "catigab",
-      "profile_url": "https://www.vinted.fr/member/81220939-catigab",
-      "photo": "https://images1.vinted.net/t/03_01122_hB7XFrF9a3CFN8EXqT47ECpa/f800/1644752943.jpeg?s=0957ca709bc891a395d6ed04b3919cf37b3ee5e0"
+      "id": 202413263,
+      "login": "ichigoson",
+      "profile_url": "https://www.vinted.fr/member/202413263-ichigoson",
+      "photo": null
+    }
+  },
+  {
+    "id": 5914205415,
+    "title": "Lego 21062 Fontana di Trevi",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "140.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5914205415",
+    "photo": null,
+    "total_item_price": {
+      "amount": "147.7",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 84374687,
+      "login": "ali2925",
+      "profile_url": "https://www.vinted.fr/member/84374687-ali2925",
+      "photo": "https://images1.vinted.net/t/02_01699_3uo4mhtkVpcVrM4Lr2HNFyXv/f800/1651672649.jpeg?s=04ddf00d6022e15ee15f2da5751459c5e41af579"
+    }
+  },
+  {
+    "id": 5917289433,
+    "title": "Fontana di Trevi Lego 21062",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "162.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5917289433",
+    "photo": null,
+    "total_item_price": {
+      "amount": "170.8",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 232699637,
+      "login": "rinnovoilguardaroba",
+      "profile_url": "https://www.vinted.fr/member/232699637-rinnovoilguardaroba",
+      "photo": null
+    }
+  },
+  {
+    "id": 5909509402,
+    "title": "Lego Architecture 21062 Fontana di Trevi",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "150.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5909509402",
+    "photo": null,
+    "total_item_price": {
+      "amount": "158.2",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 244768069,
+      "login": "armandodecurione00",
+      "profile_url": "https://www.vinted.fr/member/244768069-armandodecurione00",
+      "photo": "https://images1.vinted.net/t/02_00a91_1HLsaByo2KzJt4MgYAZhzxbn/f800/1733051510.jpeg?s=3855ad9951b309c3ea07fe6e65fc883b6f71b69b"
     }
   }
 ]

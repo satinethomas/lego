@@ -22,28 +22,6 @@
     }
   },
   {
-    "id": 5862804569,
-    "title": "Neuf - Lego 76294",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "274.9",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5862804569",
-    "photo": null,
-    "total_item_price": {
-      "amount": "289.35",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 252738403,
-      "login": "madeinbrick",
-      "profile_url": "https://www.vinted.fr/member/252738403-madeinbrick",
-      "photo": "https://images1.vinted.net/t/04_00ae7_KnuTjpCFEBLnSU9xFroeki6t/f800/1739024425.jpeg?s=c0183e6f010b78392f6fcbb78830d9a2553b4f73"
-    }
-  },
-  {
     "id": 5572869823,
     "title": "LEGO sh0978 Groot Baby Minifigure from 76286",
     "brand_title": "LEGO",
@@ -66,25 +44,25 @@
     }
   },
   {
-    "id": 5526854264,
-    "title": "LEGO sh976 Gamora Minifigure from 76286",
+    "id": 5580748329,
+    "title": "Lot part 76795 Light Bluish Gray Round Corner 5x5",
     "brand_title": "LEGO",
     "price": {
-      "amount": "18.0",
+      "amount": "3.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5526854264",
+    "url": "https://www.vinted.fr/items/5580748329",
     "photo": null,
     "total_item_price": {
-      "amount": "19.6",
+      "amount": "3.85",
       "currency_code": "EUR"
     },
-    "status": "Neuf sans étiquette",
+    "status": "Très bon état",
     "user": {
-      "id": 184568813,
-      "login": "luismaduarte",
-      "profile_url": "https://www.vinted.fr/member/184568813-luismaduarte",
-      "photo": "https://images1.vinted.net/t/03_00556_aT2aCiB9GC8aQhnj1Ehn4Tya/f800/1706210617.jpeg?s=aa706d4504b289aefb0a7a8b291676c0b9a05191"
+      "id": 144028961,
+      "login": "geert82",
+      "profile_url": "https://www.vinted.fr/member/144028961-geert82",
+      "photo": "https://images1.vinted.net/t/03_00ba6_Dfiug9E3aseuYU7RVweZvUJh/f800/1683553027.jpeg?s=6061cbeb8b1e13f4ffe6f927054ee688a830391a"
     }
   },
   {
@@ -110,25 +88,25 @@
     }
   },
   {
-    "id": 5580748329,
-    "title": "Lot part 76795 Light Bluish Gray Round Corner 5x5",
+    "id": 5526854264,
+    "title": "LEGO sh976 Gamora Minifigure from 76286",
     "brand_title": "LEGO",
     "price": {
-      "amount": "3.2",
+      "amount": "18.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5580748329",
+    "url": "https://www.vinted.fr/items/5526854264",
     "photo": null,
     "total_item_price": {
-      "amount": "4.06",
+      "amount": "19.6",
       "currency_code": "EUR"
     },
-    "status": "Très bon état",
+    "status": "Neuf sans étiquette",
     "user": {
-      "id": 144028961,
-      "login": "geert82",
-      "profile_url": "https://www.vinted.fr/member/144028961-geert82",
-      "photo": "https://images1.vinted.net/t/03_00ba6_Dfiug9E3aseuYU7RVweZvUJh/f800/1683553027.jpeg?s=6061cbeb8b1e13f4ffe6f927054ee688a830391a"
+      "id": 184568813,
+      "login": "luismaduarte",
+      "profile_url": "https://www.vinted.fr/member/184568813-luismaduarte",
+      "photo": "https://images1.vinted.net/t/03_00556_aT2aCiB9GC8aQhnj1Ehn4Tya/f800/1706210617.jpeg?s=aa706d4504b289aefb0a7a8b291676c0b9a05191"
     }
   },
   {

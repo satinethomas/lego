@@ -1,0 +1,90 @@
+[
+  {
+    "id": 5874221216,
+    "title": "Lego 21267 minecraft neuf",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "9.5",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5874221216",
+    "photo": null,
+    "total_item_price": {
+      "amount": "10.68",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 18676187,
+      "login": "auroc79",
+      "profile_url": "https://www.vinted.fr/member/18676187-auroc79",
+      "photo": "https://images1.vinted.net/t/02_013c6_xJ4HcbE9rv8B3aQU1qEx1vrj/f800/1605237110.jpeg?s=4d79ccd1f5c1dbff904aae877ece885a72594738"
+    }
+  },
+  {
+    "id": 5761532233,
+    "title": "Lego Minecraft 21267 La patrouille d'illageois du désert",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "12.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5761532233",
+    "photo": null,
+    "total_item_price": {
+      "amount": "13.3",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 251131510,
+      "login": "brickandjo",
+      "profile_url": "https://www.vinted.fr/member/251131510-brickandjo",
+      "photo": "https://images1.vinted.net/t/03_0128f_GirmaTj8eZYwZ3YuUEvyHqaj/f800/1737841236.jpeg?s=e991a67644ad7cb45af37ad5ad728d54180c8b3e"
+    }
+  },
+  {
+    "id": 5916388147,
+    "title": "Lego minecraft 21267",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "7.99",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5916388147",
+    "photo": null,
+    "total_item_price": {
+      "amount": "9.09",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf sans étiquette",
+    "user": {
+      "id": 255049886,
+      "login": "l0vebarbie25",
+      "profile_url": "https://www.vinted.fr/member/255049886-l0vebarbie25",
+      "photo": null
+    }
+  },
+  {
+    "id": 5787397928,
+    "title": "Lego 21267 Minecraft The illager desert patrol",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "12.99",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5787397928",
+    "photo": null,
+    "total_item_price": {
+      "amount": "14.34",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 38047264,
+      "login": "queenofbags",
+      "profile_url": "https://www.vinted.fr/member/38047264-queenofbags",
+      "photo": "https://images1.vinted.net/t/01_01ccc_rySY58BxKJqybA1isAY2gBAc/f800/1599994939.jpeg?s=28daff5a5baed1234d713e51ad2b27e7f08bb11d"
+    }
+  }
+]

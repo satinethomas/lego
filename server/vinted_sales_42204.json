@@ -1,0 +1,24 @@
+[
+  {
+    "id": 5875517148,
+    "title": "Neuf - Lego 42151",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "34.9",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5875517148",
+    "photo": null,
+    "total_item_price": {
+      "amount": "37.35",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 252738403,
+      "login": "madeinbrick",
+      "profile_url": "https://www.vinted.fr/member/252738403-madeinbrick",
+      "photo": "https://images1.vinted.net/t/04_00ae7_KnuTjpCFEBLnSU9xFroeki6t/f800/1739024425.jpeg?s=c0183e6f010b78392f6fcbb78830d9a2553b4f73"
+    }
+  }
+]
