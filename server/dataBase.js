@@ -70,15 +70,20 @@ async function scrapeAndStore() {
       );
 
       if (sales && sales.length > 0) {
-        allSales = allSales.concat(sales);
+        // Filtrer uniquement les articles LEGO
+        const legoSales = sales.filter(sale => sale.brand_title && sale.brand_title.toUpperCase() === 'LEGO');
+
+        if (legoSales.length > 0) {
+          allSales = allSales.concat(legoSales);
+        }
       }
     }
 
     if (allSales.length > 0) {
-      console.log(`${allSales.length} ventes trouvées sur Vinted. Insertion en cours...`);
+      console.log(`${allSales.length} ventes LEGO trouvées sur Vinted. Insertion en cours...`);
       await insertToDatabase(allSales, COLLECTION_SALES);
     } else {
-      console.log('Aucune vente Vinted trouvée.');
+      console.log('Aucune vente LEGO trouvée sur Vinted.');
     }
 
   } catch (error) {
