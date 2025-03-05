@@ -103,7 +103,7 @@ async function insertDealsToDatabase(deals) {
 }
 
 // URL de la page à scraper (à remplacer par la vraie URL de Dealabs)
-const url = 'https://www.dealabs.com/';
+const url = 'https://www.dealabs.com/groupe/lego';
 scrape(url).then(deals => {
   if (deals) {
     insertDealsToDatabase(deals);
