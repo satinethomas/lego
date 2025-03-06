@@ -181,7 +181,7 @@ async function runQueries() {
 }
 
 // Décommente pour tester les requêtes
-// runQueries();
+runQueries();
 
 // Lancer le scraping et l'insertion
 scrapeAndStore();
