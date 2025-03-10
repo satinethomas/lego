@@ -37,11 +37,16 @@ const parse = data => {
         imageUrl = `https://static.dealabs.com/${path}/${name}.${ext}`;
       }
 
+      
+
+
+
       return {
         title: thread.title,
         price: price, 
         originalPrice: originalPrice, 
         discount: discount,
+        post_date : thread.publishedAt,post_date: new Date(thread.publishedAt * 1000).toLocaleString(),
         temperature: thread.temperature,
         nb_comments: thread.commentCount,
         link: thread.link,

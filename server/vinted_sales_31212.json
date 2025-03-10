@@ -1,0 +1,90 @@
+[
+  {
+    "id": 5928853227,
+    "title": "LEGO Art 31212 - La Voie Lactée 🚀 | Neuf & Scellé",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "185.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5928853227",
+    "photo": null,
+    "total_item_price": {
+      "amount": "194.95",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 24810254,
+      "login": "armizael",
+      "profile_url": "https://www.vinted.fr/member/24810254-armizael",
+      "photo": "https://images1.vinted.net/t/03_00a8a_88k37YcQDURvKediLBWshhrm/f800/1728212364.jpeg?s=9a5ddcbfdea8d1f465e0f2258cacc0e21ff64085"
+    }
+  },
+  {
+    "id": 5915914387,
+    "title": "Lego 31213",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "70.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5915914387",
+    "photo": null,
+    "total_item_price": {
+      "amount": "74.2",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 244022299,
+      "login": "davil5925",
+      "profile_url": "https://www.vinted.fr/member/244022299-davil5925",
+      "photo": null
+    }
+  },
+  {
+    "id": 5911333546,
+    "title": "Milky Way Lego",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "180.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5911333546",
+    "photo": null,
+    "total_item_price": {
+      "amount": "189.7",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 173472438,
+      "login": "linkmeene",
+      "profile_url": "https://www.vinted.fr/member/173472438-linkmeene",
+      "photo": "https://images1.vinted.net/t/03_01d3c_RB73erJXDFfh5P9iBAKSXyNE/f800/1706856722.jpeg?s=5593dc0e9296902a84d93d0118e9998172ce0c36"
+    }
+  },
+  {
+    "id": 5900919102,
+    "title": "Lego 31212 the milky way",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "175.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5900919102",
+    "photo": null,
+    "total_item_price": {
+      "amount": "184.45",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 14680212,
+      "login": "nadialemarinel",
+      "profile_url": "https://www.vinted.fr/member/14680212-nadialemarinel",
+      "photo": "https://images1.vinted.net/t/03_00d86_n3RaW5TYz2aqYYfQnKVG5u8o/f800/1678818486.jpeg?s=e3d48367cf52c19855d905378bb90bcce7b6256a"
+    }
+  }
+]

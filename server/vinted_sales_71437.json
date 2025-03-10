@@ -1,0 +1,68 @@
+[
+  {
+    "id": 5138826658,
+    "title": "Lego super Mario plat 2x2 avec scanner code goomba",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "1.2",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5138826658",
+    "photo": null,
+    "total_item_price": {
+      "amount": "1.96",
+      "currency_code": "EUR"
+    },
+    "status": "Très bon état",
+    "user": {
+      "id": 76396077,
+      "login": "sprinter59000",
+      "profile_url": "https://www.vinted.fr/member/76396077-sprinter59000",
+      "photo": "https://images1.vinted.net/t/02_00a5b_urV38WbRe7d6H7Bdii7stSMp/f800/1717859713.jpeg?s=c52244d5a88bfe668b5a683a040dad13c7eed3a6"
+    }
+  },
+  {
+    "id": 5633736367,
+    "title": "Lego supermario the bowser express train",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "89.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5633736367",
+    "photo": null,
+    "total_item_price": {
+      "amount": "94.15",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 194787886,
+      "login": "tennisaddicts",
+      "profile_url": "https://www.vinted.fr/member/194787886-tennisaddicts",
+      "photo": "https://images1.vinted.net/t/02_0164a_c9vsLhFpa6rS9NNkw6e4c4iZ/f800/1711450679.jpeg?s=2a34c472ab1baaffae491ede09e801f650d6353a"
+    }
+  },
+  {
+    "id": 5946176687,
+    "title": "Set Lego 71437 Treno Super Mario Bros",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "95.0",
+      "currency_code": "EUR"
+    },
+    "url": "https://www.vinted.fr/items/5946176687",
+    "photo": null,
+    "total_item_price": {
+      "amount": "100.45",
+      "currency_code": "EUR"
+    },
+    "status": "Neuf avec étiquette",
+    "user": {
+      "id": 49459848,
+      "login": "ciore35",
+      "profile_url": "https://www.vinted.fr/member/49459848-ciore35",
+      "photo": "https://images1.vinted.net/t/03_025cb_P4TRGvuunV9sMQGqgsJHhrVr/f800/1729241329.jpeg?s=4e584bbb3ac9a90688298c2bb4a5af0125dbf78a"
+    }
+  }
+]
