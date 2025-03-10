@@ -7,7 +7,13 @@
   "dependencies": {
     "axios": "^1.8.1",
     "cheerio": "^1.0.0",
+<<<<<<< HEAD
     "dotenv": "^16.4.7",
+=======
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+>>>>>>> e71971bf8113bbfcb8c16f5a10b0212702dab36d
     "node-fetch": "^2.7.0",
     "parse-domain": "^8.2.2",
     "require-all": "^3.0.0",
