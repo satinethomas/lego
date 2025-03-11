@@ -1,288 +1,240 @@
 [
   {
-    "id": 5920235000,
-    "title": "Lego 40728 + 77070 + 77071",
+    "title": "Lego 77071 fortnite",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
-      "amount": "59.95",
+      "amount": "35.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5920235000",
-    "photo": null,
     "total_item_price": {
-      "amount": "63.65",
+      "amount": "37.45",
       "currency_code": "EUR"
     },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 223220958,
-      "login": "potter.harry",
-      "profile_url": "https://www.vinted.fr/member/223220958-potterharry",
-      "photo": "https://images1.vinted.net/t/03_02116_ab9BrqZXYv6Da1HP37C1Je9m/f800/1740838761.jpeg?s=c6bf1781ba6388b88cc2f524a2d49f69623d9fb6"
-    }
+    "published_time": "11/03/2025 13:56:44",
+    "url": "https://www.vinted.fr/items/5950376573",
+    "status": "Neuf sans étiquette",
+    "user_name": "cryswayne"
   },
   {
-    "id": 5916499129,
     "title": "LEGO Fortnite | \"Lama\" delle scorte | 77071 | nuovo |",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "34.9",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5916499129",
-    "photo": null,
     "total_item_price": {
       "amount": "37.35",
       "currency_code": "EUR"
     },
+    "published_time": "05/03/2025 10:20:54",
+    "url": "https://www.vinted.fr/items/5916499129",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 147024546,
-      "login": "the.jacket",
-      "profile_url": "https://www.vinted.fr/member/147024546-thejacket",
-      "photo": "https://images1.vinted.net/t/04_001d4_TFJLg4aYrUDWPaQokAmhNaqt/f800/1739877292.jpeg?s=3b2e48f194d1f0c21e41a68b2e3f25d5a056d2b1"
-    }
+    "user_name": "the.jacket"
   },
   {
-    "id": 5863899831,
-    "title": "Neuf sans carton - Peely Bone",
+    "title": "Lego 40728 + 77070 + 77071",
+    "lego_id": "40728",
     "brand_title": "LEGO",
     "price": {
-      "amount": "69.9",
+      "amount": "59.95",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5863899831",
-    "photo": null,
     "total_item_price": {
-      "amount": "74.1",
+      "amount": "63.65",
       "currency_code": "EUR"
     },
+    "published_time": "05/03/2025 20:49:16",
+    "url": "https://www.vinted.fr/items/5920235000",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 252738403,
-      "login": "madeinbrick",
-      "profile_url": "https://www.vinted.fr/member/252738403-madeinbrick",
-      "photo": "https://images1.vinted.net/t/04_00ae7_KnuTjpCFEBLnSU9xFroeki6t/f800/1739024425.jpeg?s=c0183e6f010b78392f6fcbb78830d9a2553b4f73"
-    }
+    "user_name": "potter.harry"
   },
   {
-    "id": 5920007839,
     "title": "Lego fortnite 77071",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "30.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5920007839",
-    "photo": null,
     "total_item_price": {
       "amount": "32.2",
       "currency_code": "EUR"
     },
+    "published_time": "05/03/2025 20:04:35",
+    "url": "https://www.vinted.fr/items/5920007839",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 246272266,
-      "login": "worldlego",
-      "profile_url": "https://www.vinted.fr/member/246272266-worldlego",
-      "photo": "https://images1.vinted.net/t/01_012ee_NVkVP1JwFxhRQEmaK8tBxkPD/f800/1733905659.jpeg?s=9049ce72accffcaaa264fcd0550cde2755a48470"
-    }
+    "user_name": "worldlego"
   },
   {
-    "id": 5749188843,
+    "title": "Neuf sans carton - Peely Bone",
+    "lego_id": null,
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "69.9",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "74.1",
+      "currency_code": "EUR"
+    },
+    "published_time": "23/02/2025 13:45:21",
+    "url": "https://www.vinted.fr/items/5863899831",
+    "status": "Neuf avec étiquette",
+    "user_name": "madeinbrick"
+  },
+  {
     "title": "Lego fortnite lama de ravitaillement 77071 neuf scelle",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "37.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5749188843",
-    "photo": null,
     "total_item_price": {
       "amount": "39.55",
       "currency_code": "EUR"
     },
+    "published_time": "02/02/2025 09:30:17",
+    "url": "https://www.vinted.fr/items/5749188843",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 226402605,
-      "login": "djklbc17",
-      "profile_url": "https://www.vinted.fr/member/226402605-djklbc17",
-      "photo": null
-    }
+    "user_name": "djklbc17"
   },
   {
-    "id": 5550606518,
     "title": "LEGO 77071 Llama de suministros Fornite",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "60.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5550606518",
-    "photo": null,
     "total_item_price": {
       "amount": "63.7",
       "currency_code": "EUR"
     },
+    "published_time": "21/12/2024 17:42:33",
+    "url": "https://www.vinted.fr/items/5550606518",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 32002118,
-      "login": "marta.84l",
-      "profile_url": "https://www.vinted.fr/member/32002118-marta84l",
-      "photo": "https://images1.vinted.net/t/01_026ca_iEgFAR4uEfYCZyXx5RfNuCAX/f800/1696931622.jpeg?s=ca13959290c68e8f564cf1d1a840ba735c6af710"
-    }
+    "user_name": "marta.84l"
   },
   {
-    "id": 5783222467,
     "title": "Neuf - Lego 77072",
+    "lego_id": "77072",
     "brand_title": "LEGO",
     "price": {
       "amount": "94.9",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5783222467",
-    "photo": null,
     "total_item_price": {
       "amount": "100.35",
       "currency_code": "EUR"
     },
+    "published_time": "08/02/2025 15:47:54",
+    "url": "https://www.vinted.fr/items/5783222467",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 252738403,
-      "login": "madeinbrick",
-      "profile_url": "https://www.vinted.fr/member/252738403-madeinbrick",
-      "photo": "https://images1.vinted.net/t/04_00ae7_KnuTjpCFEBLnSU9xFroeki6t/f800/1739024425.jpeg?s=c0183e6f010b78392f6fcbb78830d9a2553b4f73"
-    }
+    "user_name": "madeinbrick"
   },
   {
-    "id": 5944970598,
     "title": "Lego Fornite 77071 novo, selado",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "30.79",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5944970598",
-    "photo": null,
     "total_item_price": {
       "amount": "33.03",
       "currency_code": "EUR"
     },
+    "published_time": "10/03/2025 13:52:27",
+    "url": "https://www.vinted.fr/items/5944970598",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 95168754,
-      "login": "hugomlmartins",
-      "profile_url": "https://www.vinted.fr/member/95168754-hugomlmartins",
-      "photo": "https://images1.vinted.net/t/02_010da_M1CLzeWMKQdjk2Z3L36RP5Gg/f800/1671480832.jpeg?s=7c3070a27d505cd6ea8b7131ab547b44abd8a799"
-    }
+    "user_name": "hugomlmartins"
   },
   {
-    "id": 5650264792,
     "title": "Lego 77071",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "40.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5650264792",
-    "photo": null,
     "total_item_price": {
       "amount": "42.7",
       "currency_code": "EUR"
     },
+    "published_time": "13/01/2025 23:13:56",
+    "url": "https://www.vinted.fr/items/5650264792",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 84098266,
-      "login": "lalytob51",
-      "profile_url": "https://www.vinted.fr/member/84098266-lalytob51",
-      "photo": "https://images1.vinted.net/t/01_0181d_65u8MBokyNmVappzksAewmeH/f800/1647179996.jpeg?s=f8a02c8635cb2e5aceaf1b1289c8b312ee1bde13"
-    }
+    "user_name": "lalytob51"
   },
   {
-    "id": 5635129873,
-    "title": "Lego 77071 - Fortnite  - Llama de suministros",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "39.5",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5635129873",
-    "photo": null,
-    "total_item_price": {
-      "amount": "42.18",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 56801686,
-      "login": "gndnr",
-      "profile_url": "https://www.vinted.fr/member/56801686-gndnr",
-      "photo": null
-    }
-  },
-  {
-    "id": 5934118134,
-    "title": "Lego Forrnite llama de suministros 77071",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "39.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5934118134",
-    "photo": null,
-    "total_item_price": {
-      "amount": "41.65",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 50642702,
-      "login": "kutxufla",
-      "profile_url": "https://www.vinted.fr/member/50642702-kutxufla",
-      "photo": "https://images1.vinted.net/t/03_01ffa_XbGkty3MxU2o86Egbaz12zUs/f800/1621072599.jpeg?s=13c7f39a4a6ee6403817ccdf59a7382214544f2d"
-    }
-  },
-  {
-    "id": 5775284760,
     "title": "Lego Fortnite 77071: Lama",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "38.99",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5775284760",
-    "photo": null,
     "total_item_price": {
       "amount": "41.64",
       "currency_code": "EUR"
     },
+    "published_time": "06/02/2025 21:53:21",
+    "url": "https://www.vinted.fr/items/5775284760",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 210378751,
-      "login": "warrior_princess",
-      "profile_url": "https://www.vinted.fr/member/210378751-warriorprincess",
-      "photo": "https://images1.vinted.net/t/04_011c2_9sVUJARQUHgW6jLrmEn5Uod8/f800/1736719376.jpeg?s=77328072a3c90c1aa69671b22ea6d42f49901307"
-    }
+    "user_name": "warrior_princess"
   },
   {
-    "id": 5808573335,
+    "title": "Lego 77071 - Fortnite  - Llama de suministros",
+    "lego_id": "77071",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "39.5",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "42.18",
+      "currency_code": "EUR"
+    },
+    "published_time": "11/01/2025 15:05:28",
+    "url": "https://www.vinted.fr/items/5635129873",
+    "status": "Neuf avec étiquette",
+    "user_name": "gndnr"
+  },
+  {
     "title": "Lego 77071 - Fortnite Supply Llama",
+    "lego_id": "77071",
     "brand_title": "LEGO",
     "price": {
       "amount": "45.9",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5808573335",
-    "photo": null,
     "total_item_price": {
       "amount": "48.9",
       "currency_code": "EUR"
     },
+    "published_time": "12/02/2025 23:50:42",
+    "url": "https://www.vinted.fr/items/5808573335",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 249863438,
-      "login": "manuescano",
-      "profile_url": "https://www.vinted.fr/member/249863438-manuescano",
-      "photo": "https://images1.vinted.net/t/04_00aca_svHHSBrgS6gp2U64qqLDMZiV/f800/1737882633.jpeg?s=d24e770d10ce00ccb9b157b888dfb97cf8886675"
-    }
+    "user_name": "manuescano"
+  },
+  {
+    "title": "Lego Forrnite llama de suministros 77071",
+    "lego_id": "77071",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "39.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "41.65",
+      "currency_code": "EUR"
+    },
+    "published_time": "08/03/2025 17:33:10",
+    "url": "https://www.vinted.fr/items/5934118134",
+    "status": "Neuf avec étiquette",
+    "user_name": "kutxufla"
   }
 ]

@@ -1,464 +1,393 @@
 [
   {
-    "id": 5747763207,
+    "title": "LEGO Star Wars Le Starcruiser Home One",
+    "lego_id": null,
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "69.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "73.15",
+      "currency_code": "EUR"
+    },
+    "published_time": "11/03/2025 13:43:40",
+    "url": "https://www.vinted.fr/items/5950292288",
+    "status": "Neuf avec étiquette",
+    "user_name": "bernie29680"
+  },
+  {
+    "title": "Lego 75405",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "50.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "53.2",
+      "currency_code": "EUR"
+    },
+    "published_time": "05/03/2025 00:09:38",
+    "url": "https://www.vinted.fr/items/5915834067",
+    "status": "Neuf avec étiquette",
+    "user_name": "dofus777"
+  },
+  {
     "title": "Lego 75405 Starwars",
+    "lego_id": "75405",
     "brand_title": "LEGO",
     "price": {
       "amount": "45.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5747763207",
-    "photo": null,
     "total_item_price": {
       "amount": "47.95",
       "currency_code": "EUR"
     },
+    "published_time": "01/02/2025 19:26:48",
+    "url": "https://www.vinted.fr/items/5747763207",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 40278324,
-      "login": "kandyto99",
-      "profile_url": "https://www.vinted.fr/member/40278324-kandyto99",
-      "photo": "https://images1.vinted.net/t/03_0103e_RUJgmKuAQAp4qdc4z1nKWrye/f800/1665276572.jpeg?s=565546cbc498428d2acb6a7bda70a83f91bc1dea"
-    }
+    "user_name": "kandyto99"
   },
   {
-    "id": 5915834067,
-    "title": "Lego 75405",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "50.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5915834067",
-    "photo": null,
-    "total_item_price": {
-      "amount": "53.2",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 49802937,
-      "login": "dofus777",
-      "profile_url": "https://www.vinted.fr/member/49802937-dofus777",
-      "photo": "https://images1.vinted.net/t/01_01d81_WUYJTR9SgNhEFTTYvgMK1Ueg/f800/1737324446.jpeg?s=a2bbc2d483538dbc992aa61ef33497e0550901c2"
-    }
-  },
-  {
-    "id": 5907681437,
     "title": "lego star wars MEGA bundle",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
       "amount": "485.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5907681437",
-    "photo": null,
     "total_item_price": {
       "amount": "509.95",
       "currency_code": "EUR"
     },
+    "published_time": "03/03/2025 14:25:23",
+    "url": "https://www.vinted.fr/items/5907681437",
     "status": "Neuf sans étiquette",
-    "user": {
-      "id": 228434419,
-      "login": "lorenzosapone",
-      "profile_url": "https://www.vinted.fr/member/228434419-lorenzosapone",
-      "photo": "https://images1.vinted.net/t/03_01980_1vCNFVkUxKEzebC8RCTuFcaQ/f800/1725995215.jpeg?s=a28e9818330fb6ff77b8955eb4e177128d50e665"
-    }
+    "user_name": "lorenzosapone"
   },
   {
-    "id": 5917922461,
-    "title": "lego star wars sigillati",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "250.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5917922461",
-    "photo": null,
-    "total_item_price": {
-      "amount": "263.2",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf sans étiquette",
-    "user": {
-      "id": 228434419,
-      "login": "lorenzosapone",
-      "profile_url": "https://www.vinted.fr/member/228434419-lorenzosapone",
-      "photo": "https://images1.vinted.net/t/03_01980_1vCNFVkUxKEzebC8RCTuFcaQ/f800/1725995215.jpeg?s=a28e9818330fb6ff77b8955eb4e177128d50e665"
-    }
-  },
-  {
-    "id": 5683641014,
-    "title": "Lego Star Wars 75405 neuf",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "48.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5683641014",
-    "photo": null,
-    "total_item_price": {
-      "amount": "51.1",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 15912656,
-      "login": "elooo38",
-      "profile_url": "https://www.vinted.fr/member/15912656-elooo38",
-      "photo": "https://images1.vinted.net/t/02_022db_ikWwJRgw32LEmC2SDuYMtS9x/f800/1713901921.jpeg?s=71ab6030afacc85cfb61691eff0eb3ce499e8431"
-    }
-  },
-  {
-    "id": 5802017196,
-    "title": "Set LEGO Star Wars",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "48.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5802017196",
-    "photo": null,
-    "total_item_price": {
-      "amount": "51.1",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 17554782,
-      "login": "mateo5698",
-      "profile_url": "https://www.vinted.fr/member/17554782-mateo5698",
-      "photo": "https://images1.vinted.net/t/03_01456_7P2WBTdzRW5EJWzTiSXu4GWH/f800/1730564693.jpeg?s=cec4331c09a3119e8bd60424fedd529af5c5679a"
-    }
-  },
-  {
-    "id": 5914970656,
-    "title": "Lego Star Wars Home One Starcruiser Referencia:75405",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "55.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5914970656",
-    "photo": null,
-    "total_item_price": {
-      "amount": "58.45",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 55261957,
-      "login": "ofa20",
-      "profile_url": "https://www.vinted.fr/member/55261957-ofa20",
-      "photo": "https://images1.vinted.net/t/02_0051d_5jXJwfvXuDTURnsB5dQgcmxN/f800/1615553088.jpeg?s=45aefa369c8720aba726491e5411e890e459868e"
-    }
-  },
-  {
-    "id": 5925482519,
     "title": "Lego 75405",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "49.95",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5925482519",
-    "photo": null,
-    "total_item_price": {
-      "amount": "53.15",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 238760275,
-      "login": "the.dark.1",
-      "profile_url": "https://www.vinted.fr/member/238760275-thedark1",
-      "photo": "https://images1.vinted.net/t/01_010b9_8winKDc2d8ahJodfDiwFfmMA/f800/1741476679.jpeg?s=b8f980a0eb3df98d3c22f5f3e63b8c91f8f37659"
-    }
-  },
-  {
-    "id": 5862649352,
-    "title": "Lego star wars 75405",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "55.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5862649352",
-    "photo": null,
-    "total_item_price": {
-      "amount": "58.45",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf sans étiquette",
-    "user": {
-      "id": 30945726,
-      "login": "koreas93",
-      "profile_url": "https://www.vinted.fr/member/30945726-koreas93",
-      "photo": null
-    }
-  },
-  {
-    "id": 5781671109,
-    "title": "Lego star wars 75405 new!",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "60.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5781671109",
-    "photo": null,
-    "total_item_price": {
-      "amount": "63.7",
-      "currency_code": "EUR"
-    },
-    "status": "Très bon état",
-    "user": {
-      "id": 74276308,
-      "login": "dalmo7582",
-      "profile_url": "https://www.vinted.fr/member/74276308-dalmo7582",
-      "photo": "https://images1.vinted.net/t/03_01c54_VTCLMzAUi7sxbbn8ixTfXKtz/f800/1638740139.jpeg?s=53d310900c41b026e95abd8f805d951edb596280"
-    }
-  },
-  {
-    "id": 5712014848,
-    "title": "75405 Lego - Home One Starcruiser",
+    "lego_id": "75405",
     "brand_title": "LEGO",
     "price": {
       "amount": "52.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5712014848",
-    "photo": null,
     "total_item_price": {
       "amount": "55.3",
       "currency_code": "EUR"
     },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 164569706,
-      "login": "nolde80",
-      "profile_url": "https://www.vinted.fr/member/164569706-nolde80",
-      "photo": "https://images1.vinted.net/t/03_00c1a_QUgZ7C1zKSsu1mE7fvijbKAE/f800/1722408887.jpeg?s=a833bc13afd18d3025575cb466ca5963a50e017b"
-    }
+    "published_time": "11/03/2025 02:43:18",
+    "url": "https://www.vinted.fr/items/5948462242",
+    "status": "Neuf sans étiquette",
+    "user_name": "koreas93"
   },
   {
-    "id": 5795506608,
-    "title": "Lego 75405 starcruiser",
+    "title": "Lego Star Wars 75405 neuf",
+    "lego_id": "75405",
     "brand_title": "LEGO",
     "price": {
-      "amount": "60.0",
+      "amount": "48.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5795506608",
-    "photo": null,
     "total_item_price": {
-      "amount": "63.7",
+      "amount": "51.1",
       "currency_code": "EUR"
     },
+    "published_time": "18/02/2025 09:25:32",
+    "url": "https://www.vinted.fr/items/5683641014",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 74577679,
-      "login": "mariobert84",
-      "profile_url": "https://www.vinted.fr/member/74577679-mariobert84",
-      "photo": "https://images1.vinted.net/t/03_013bf_15KC68iBCHgDrabST9RVa3KG/f800/1644708900.jpeg?s=6344e508db676b16d036e45206958ad4fa385959"
-    }
+    "user_name": "elooo38"
   },
   {
-    "id": 5814997905,
-    "title": "Lego star wars",
+    "title": "Lego 75405",
+    "lego_id": "75405",
     "brand_title": "LEGO",
     "price": {
       "amount": "55.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5814997905",
-    "photo": null,
     "total_item_price": {
       "amount": "58.45",
       "currency_code": "EUR"
     },
+    "published_time": "11/03/2025 12:32:01",
+    "url": "https://www.vinted.fr/items/5949846135",
     "status": "Neuf sans étiquette",
-    "user": {
-      "id": 15500524,
-      "login": "lolo13132",
-      "profile_url": "https://www.vinted.fr/member/15500524-lolo13132",
-      "photo": "https://images1.vinted.net/t/02_01547_xPgRzKUiEmiBZ2tpXGxE1EqU/f800/1605250285.jpeg?s=f18cdf2782c2125649dfb57bb05a7b04a09d71b8"
-    }
+    "user_name": "projouet"
   },
   {
-    "id": 5710197607,
-    "title": "Lego 75405 Star Wars home one star cruiser",
+    "title": "lego star wars sigillati",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
-      "amount": "53.0",
+      "amount": "250.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5710197607",
-    "photo": null,
     "total_item_price": {
-      "amount": "56.35",
+      "amount": "263.2",
       "currency_code": "EUR"
     },
+    "published_time": "05/03/2025 14:23:37",
+    "url": "https://www.vinted.fr/items/5917922461",
     "status": "Neuf sans étiquette",
-    "user": {
-      "id": 55817497,
-      "login": "superchouchou",
-      "profile_url": "https://www.vinted.fr/member/55817497-superchouchou",
-      "photo": null
-    }
+    "user_name": "lorenzosapone"
   },
   {
-    "id": 5739207416,
-    "title": "Le vaisseau Starcruiser Home one lego star wars 75405",
+    "title": "Set LEGO Star Wars",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
-      "amount": "70.0",
+      "amount": "48.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5739207416",
-    "photo": null,
     "total_item_price": {
-      "amount": "74.2",
+      "amount": "51.1",
       "currency_code": "EUR"
     },
-    "status": "Très bon état",
-    "user": {
-      "id": 150034421,
-      "login": "jstoysland",
-      "profile_url": "https://www.vinted.fr/member/150034421-jstoysland",
-      "photo": "https://images1.vinted.net/t/01_00638_nE9mBke66ZxgfBfCW6xWreVF/f800/1687441501.jpeg?s=5d52c7ba7763b83d31f0fb767eb0bb2f87407282"
-    }
-  },
-  {
-    "id": 5856742674,
-    "title": "Lego 75405",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "58.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5856742674",
-    "photo": null,
-    "total_item_price": {
-      "amount": "61.6",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf sans étiquette",
-    "user": {
-      "id": 80223231,
-      "login": "remy20021995",
-      "profile_url": "https://www.vinted.fr/member/80223231-remy20021995",
-      "photo": "https://images1.vinted.net/t/02_0207d_72BgWcrV7uGTjatLQk9jMMq1/f800/1643466875.jpeg?s=e46fd20d9dff5c333882dad01520e87abf1776d7"
-    }
-  },
-  {
-    "id": 5850804722,
-    "title": "LEGO 75405 Star Wars  Crucero Estelar Hogar",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "50.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5850804722",
-    "photo": null,
-    "total_item_price": {
-      "amount": "53.2",
-      "currency_code": "EUR"
-    },
+    "published_time": "11/02/2025 18:17:29",
+    "url": "https://www.vinted.fr/items/5802017196",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 46821842,
-      "login": "ropademarca2021",
-      "profile_url": "https://www.vinted.fr/member/46821842-ropademarca2021",
-      "photo": "https://images1.vinted.net/t/03_026f9_TCm5y6VP5rRhcVbKSD1ynkFA/f800/1677018316.jpeg?s=2ce833c4b4690efd73f90f314fed2d40233f23a5"
-    }
+    "user_name": "mateo5698"
   },
   {
-    "id": 5780632758,
+    "title": "Lego Star Wars Home One Starcruiser Referencia:75405",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "55.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "58.45",
+      "currency_code": "EUR"
+    },
+    "published_time": "04/03/2025 20:15:34",
+    "url": "https://www.vinted.fr/items/5914970656",
+    "status": "Neuf avec étiquette",
+    "user_name": "ofa20"
+  },
+  {
     "title": "Lego 75405",
+    "lego_id": "75405",
     "brand_title": "LEGO",
     "price": {
-      "amount": "58.0",
+      "amount": "49.95",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5780632758",
-    "photo": null,
     "total_item_price": {
-      "amount": "61.6",
+      "amount": "53.15",
       "currency_code": "EUR"
     },
-    "status": "Neuf sans étiquette",
-    "user": {
-      "id": 1452514,
-      "login": "debo93",
-      "profile_url": "https://www.vinted.fr/member/1452514-debo93",
-      "photo": "https://images1.vinted.net/t/02_0181a_yNYna4EvCuvyAncLVZbh6Z8c/f800/1604858822.jpeg?s=23204d2f2c8b5131944b38fd528c718480e91b3d"
-    }
+    "published_time": "06/03/2025 22:04:07",
+    "url": "https://www.vinted.fr/items/5925482519",
+    "status": "Neuf avec étiquette",
+    "user_name": "the.dark.1"
   },
   {
-    "id": 5682066451,
-    "title": "Lego star wars 75405 le Starcruiser Home one",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "70.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5682066451",
-    "photo": null,
-    "total_item_price": {
-      "amount": "74.2",
-      "currency_code": "EUR"
-    },
-    "status": "Très bon état",
-    "user": {
-      "id": 150034421,
-      "login": "jstoysland",
-      "profile_url": "https://www.vinted.fr/member/150034421-jstoysland",
-      "photo": "https://images1.vinted.net/t/01_00638_nE9mBke66ZxgfBfCW6xWreVF/f800/1687441501.jpeg?s=5d52c7ba7763b83d31f0fb767eb0bb2f87407282"
-    }
-  },
-  {
-    "id": 5785044600,
-    "title": "Starcruiser Home One",
+    "title": "Lego star wars 75405 new!",
+    "lego_id": "75405",
     "brand_title": "LEGO",
     "price": {
       "amount": "60.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5785044600",
-    "photo": null,
     "total_item_price": {
       "amount": "63.7",
       "currency_code": "EUR"
     },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 84232452,
-      "login": "danilo5555",
-      "profile_url": "https://www.vinted.fr/member/84232452-danilo5555",
-      "photo": "https://images1.vinted.net/t/01_0202d_5Cycejx2pwnPEmaGJxihYWWr/f800/1699443857.jpeg?s=97b540a70ca512fff8e70b3af2127e260d018cc0"
-    }
+    "published_time": "08/02/2025 12:36:15",
+    "url": "https://www.vinted.fr/items/5781671109",
+    "status": "Très bon état",
+    "user_name": "dalmo7582"
   },
   {
-    "id": 5585344197,
-    "title": "Lego Star Wars Starship Collection 75405: Home One Starcruiser",
+    "title": "75405 Lego - Home One Starcruiser",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "52.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "55.3",
+      "currency_code": "EUR"
+    },
+    "published_time": "26/01/2025 09:44:15",
+    "url": "https://www.vinted.fr/items/5712014848",
+    "status": "Neuf avec étiquette",
+    "user_name": "nolde80"
+  },
+  {
+    "title": "Lego 75405 starcruiser",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "60.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "63.7",
+      "currency_code": "EUR"
+    },
+    "published_time": "10/02/2025 14:57:40",
+    "url": "https://www.vinted.fr/items/5795506608",
+    "status": "Neuf avec étiquette",
+    "user_name": "mariobert84"
+  },
+  {
+    "title": "Lego 75405 Star Wars home one star cruiser",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "53.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "56.35",
+      "currency_code": "EUR"
+    },
+    "published_time": "25/01/2025 18:31:49",
+    "url": "https://www.vinted.fr/items/5710197607",
+    "status": "Neuf sans étiquette",
+    "user_name": "superchouchou"
+  },
+  {
+    "title": "Le vaisseau Starcruiser Home one lego star wars 75405",
+    "lego_id": "75405",
     "brand_title": "LEGO",
     "price": {
       "amount": "70.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5585344197",
-    "photo": null,
     "total_item_price": {
       "amount": "74.2",
       "currency_code": "EUR"
     },
+    "published_time": "31/01/2025 09:49:28",
+    "url": "https://www.vinted.fr/items/5739207416",
+    "status": "Très bon état",
+    "user_name": "jstoysland"
+  },
+  {
+    "title": "Lego 75405",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "58.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "61.6",
+      "currency_code": "EUR"
+    },
+    "published_time": "22/02/2025 11:26:13",
+    "url": "https://www.vinted.fr/items/5856742674",
+    "status": "Neuf sans étiquette",
+    "user_name": "remy20021995"
+  },
+  {
+    "title": "LEGO 75405 Star Wars  Crucero Estelar Hogar",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "50.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "53.2",
+      "currency_code": "EUR"
+    },
+    "published_time": "20/02/2025 23:47:23",
+    "url": "https://www.vinted.fr/items/5850804722",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 42556868,
-      "login": "frandelajungla_56",
-      "profile_url": "https://www.vinted.fr/member/42556868-frandelajungla56",
-      "photo": "https://images1.vinted.net/t/01_0085f_hLc6aAmmnZuxeLngwoPk85Nh/f800/1603641539.jpeg?s=e8999164dbde338665eb7c0d6fadd1d78df6e2b1"
-    }
+    "user_name": "ropademarca2021"
+  },
+  {
+    "title": "Lego star wars",
+    "lego_id": null,
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "55.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "58.45",
+      "currency_code": "EUR"
+    },
+    "published_time": "14/02/2025 14:45:09",
+    "url": "https://www.vinted.fr/items/5814997905",
+    "status": "Neuf sans étiquette",
+    "user_name": "lolo13132"
+  },
+  {
+    "title": "Lego 75405",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "58.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "61.6",
+      "currency_code": "EUR"
+    },
+    "published_time": "08/02/2025 09:50:49",
+    "url": "https://www.vinted.fr/items/5780632758",
+    "status": "Neuf sans étiquette",
+    "user_name": "debo93"
+  },
+  {
+    "title": "Lego star wars 75405 le Starcruiser Home one",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "70.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "74.2",
+      "currency_code": "EUR"
+    },
+    "published_time": "20/01/2025 09:43:25",
+    "url": "https://www.vinted.fr/items/5682066451",
+    "status": "Très bon état",
+    "user_name": "jstoysland"
+  },
+  {
+    "title": "Starcruiser Home One",
+    "lego_id": null,
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "60.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "63.7",
+      "currency_code": "EUR"
+    },
+    "published_time": "08/02/2025 19:56:40",
+    "url": "https://www.vinted.fr/items/5785044600",
+    "status": "Neuf avec étiquette",
+    "user_name": "danilo5555"
+  },
+  {
+    "title": "Lego Star Wars Starship Collection 75405: Home One Starcruiser",
+    "lego_id": "75405",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "70.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "74.2",
+      "currency_code": "EUR"
+    },
+    "published_time": "01/01/2025 18:11:15",
+    "url": "https://www.vinted.fr/items/5585344197",
+    "status": "Neuf avec étiquette",
+    "user_name": "frandelajungla_56"
   }
 ]

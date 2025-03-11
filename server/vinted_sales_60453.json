@@ -1,24 +1,19 @@
 [
   {
-    "id": 5881966855,
     "title": "Lego city 60453 le véhicule de secours de la plage",
+    "lego_id": "60453",
     "brand_title": "LEGO",
     "price": {
       "amount": "18.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5881966855",
-    "photo": null,
     "total_item_price": {
       "amount": "19.6",
       "currency_code": "EUR"
     },
+    "published_time": "26/02/2025 16:36:05",
+    "url": "https://www.vinted.fr/items/5881966855",
     "status": "Très bon état",
-    "user": {
-      "id": 14179198,
-      "login": "2453nathan1004",
-      "profile_url": "https://www.vinted.fr/member/14179198-2453nathan1004",
-      "photo": "https://images1.vinted.net/t/03_026cc_m6A5Lzvc6fNEtpM9xe7qms25/f800/1646164402.jpeg?s=2365910936e336b3e47b85ba93dd38f8e2cc41a0"
-    }
+    "user_name": "2453nathan1004"
   }
 ]

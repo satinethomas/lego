@@ -1,222 +1,172 @@
 [
   {
-    "id": 5935779674,
     "title": "Lego City 60445 Formula Uno",
+    "lego_id": "60445",
     "brand_title": "LEGO",
     "price": {
       "amount": "75.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5935779674",
-    "photo": null,
     "total_item_price": {
       "amount": "79.45",
       "currency_code": "EUR"
     },
+    "published_time": "09/03/2025 00:01:19",
+    "url": "https://www.vinted.fr/items/5935779674",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 244768069,
-      "login": "armandodecurione00",
-      "profile_url": "https://www.vinted.fr/member/244768069-armandodecurione00",
-      "photo": "https://images1.vinted.net/t/02_00a91_1HLsaByo2KzJt4MgYAZhzxbn/f800/1733051510.jpeg?s=3855ad9951b309c3ea07fe6e65fc883b6f71b69b"
-    }
+    "user_name": "armandodecurione00"
   },
   {
-    "id": 5944155499,
-    "title": "LEGO City Camion de F1 avec voitures de F1 RB20 et AMR24C'est",
+    "title": "LEGO City Camion de F1 avec voitures de F1 RB20 et AMR24",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
       "amount": "79.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5944155499",
-    "photo": null,
     "total_item_price": {
       "amount": "83.65",
       "currency_code": "EUR"
     },
+    "published_time": "11/03/2025 08:30:36",
+    "url": "https://www.vinted.fr/items/5948654884",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 148857563,
-      "login": "goinsteen7",
-      "profile_url": "https://www.vinted.fr/member/148857563-goinsteen7",
-      "photo": null
-    }
+    "user_name": "goinsteen7"
   },
   {
-    "id": 5887809679,
     "title": "Lego 60445",
+    "lego_id": "60445",
     "brand_title": "LEGO",
     "price": {
       "amount": "76.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5887809679",
-    "photo": null,
     "total_item_price": {
       "amount": "80.5",
       "currency_code": "EUR"
     },
+    "published_time": "27/02/2025 19:14:02",
+    "url": "https://www.vinted.fr/items/5887809679",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 238760275,
-      "login": "the.dark.1",
-      "profile_url": "https://www.vinted.fr/member/238760275-thedark1",
-      "photo": "https://images1.vinted.net/t/01_010b9_8winKDc2d8ahJodfDiwFfmMA/f800/1741476679.jpeg?s=b8f980a0eb3df98d3c22f5f3e63b8c91f8f37659"
-    }
+    "user_name": "the.dark.1"
   },
   {
-    "id": 5944261616,
-    "title": "Set lego \"City formula 1\" 60445",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "74.99",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5944261616",
-    "photo": null,
-    "total_item_price": {
-      "amount": "79.44",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf sans étiquette",
-    "user": {
-      "id": 255342392,
-      "login": "brendarinaldi97",
-      "profile_url": "https://www.vinted.fr/member/255342392-brendarinaldi97",
-      "photo": null
-    }
-  },
-  {
-    "id": 5664121704,
-    "title": "Lego 60445",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "84.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5664121704",
-    "photo": null,
-    "total_item_price": {
-      "amount": "88.9",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 205712437,
-      "login": "michelesilvestri79",
-      "profile_url": "https://www.vinted.fr/member/205712437-michelesilvestri79",
-      "photo": "https://images1.vinted.net/t/01_010ab_p5d2qk1Ghi8X7okWUDPa11hH/f800/1715949577.jpeg?s=3787bed5014f2efadec9117d1d1055c15df7ef51"
-    }
-  },
-  {
-    "id": 5940751470,
-    "title": "LEGO City Camion de F1 avec voitures de F1 RB20 et AMR24C'est",
+    "title": "LEGO City Camion de F1 avec voitures de F1 RB20 et AMR24",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
       "amount": "79.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5940751470",
-    "photo": null,
     "total_item_price": {
       "amount": "83.65",
       "currency_code": "EUR"
     },
+    "published_time": "10/03/2025 17:49:31",
+    "url": "https://www.vinted.fr/items/5946571098",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 148857563,
-      "login": "goinsteen7",
-      "profile_url": "https://www.vinted.fr/member/148857563-goinsteen7",
-      "photo": null
-    }
+    "user_name": "goinsteen7"
   },
   {
-    "id": 5900802271,
+    "title": "Set lego \"City formula 1\" 60445",
+    "lego_id": "60445",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "74.99",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "79.44",
+      "currency_code": "EUR"
+    },
+    "published_time": "10/03/2025 11:59:59",
+    "url": "https://www.vinted.fr/items/5944261616",
+    "status": "Neuf sans étiquette",
+    "user_name": "brendarinaldi97"
+  },
+  {
+    "title": "Lego 60445",
+    "lego_id": "60445",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "84.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "88.9",
+      "currency_code": "EUR"
+    },
+    "published_time": "16/01/2025 22:02:50",
+    "url": "https://www.vinted.fr/items/5664121704",
+    "status": "Neuf avec étiquette",
+    "user_name": "michelesilvestri79"
+  },
+  {
+    "title": "LEGO City 60445 : camion F1 avec F1 RB20 & AMR24",
+    "lego_id": "60445",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "85.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "89.95",
+      "currency_code": "EUR"
+    },
+    "published_time": "24/02/2025 15:53:57",
+    "url": "https://www.vinted.fr/items/5871255940",
+    "status": "Neuf avec étiquette",
+    "user_name": "team_g"
+  },
+  {
+    "title": "Lego 60445",
+    "lego_id": "60445",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "85.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "89.95",
+      "currency_code": "EUR"
+    },
+    "published_time": "05/03/2025 15:30:30",
+    "url": "https://www.vinted.fr/items/5918353037",
+    "status": "Neuf avec étiquette",
+    "user_name": "charlottebeauty"
+  },
+  {
     "title": "Set LEGO City Autotrasportatore F1 con Monoposto RB20 e AMR24 F1",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
       "amount": "80.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5900802271",
-    "photo": null,
     "total_item_price": {
       "amount": "84.7",
       "currency_code": "EUR"
     },
+    "published_time": "02/03/2025 12:43:55",
+    "url": "https://www.vinted.fr/items/5900802271",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 174317551,
-      "login": "adryyy62",
-      "profile_url": "https://www.vinted.fr/member/174317551-adryyy62",
-      "photo": "https://images1.vinted.net/t/02_026ab_anH6ksWKf6JNWZndJyTg9TsZ/f800/1701607924.jpeg?s=7acaf176b07446e995c5168cc9909ac880683c61"
-    }
+    "user_name": "adryyy62"
   },
   {
-    "id": 5871255940,
-    "title": "LEGO City 60445 : camion F1 avec F1 RB20 & AMR24",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "85.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5871255940",
-    "photo": null,
-    "total_item_price": {
-      "amount": "89.95",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 13728547,
-      "login": "team_g",
-      "profile_url": "https://www.vinted.fr/member/13728547-teamg",
-      "photo": "https://images1.vinted.net/t/03_01809_wPYbCenGAhz4yUsvhYRGznPv/f800/1659554539.jpeg?s=d14c3719a7f19b49f6b99ef3fe14c2d4e59278e8"
-    }
-  },
-  {
-    "id": 5918353037,
-    "title": "Lego 60445",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "85.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5918353037",
-    "photo": null,
-    "total_item_price": {
-      "amount": "89.95",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 198765914,
-      "login": "charlottebeauty",
-      "profile_url": "https://www.vinted.fr/member/198765914-charlottebeauty",
-      "photo": "https://images1.vinted.net/t/03_00437_2PQEvujaPoMsuuE3zfDaiSxa/f800/1713128964.jpeg?s=16130a74779d5a3700918100151a2fde669134e8"
-    }
-  },
-  {
-    "id": 5832956709,
     "title": "Lego 60445 Autotrasportatore F1",
+    "lego_id": "60445",
     "brand_title": "LEGO",
     "price": {
       "amount": "75.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5832956709",
-    "photo": null,
     "total_item_price": {
       "amount": "79.45",
       "currency_code": "EUR"
     },
+    "published_time": "03/03/2025 21:50:54",
+    "url": "https://www.vinted.fr/items/5832956709",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 64037722,
-      "login": "shambolafratello",
-      "profile_url": "https://www.vinted.fr/member/64037722-shambolafratello",
-      "photo": "https://images1.vinted.net/t/01_01d7e_LSPD8VDq9npyrw5ma6eXD3Q2/f800/1688564199.jpeg?s=168f7adf3925aa910d71614f60edb4844ad449ff"
-    }
+    "user_name": "shambolafratello"
   }
 ]

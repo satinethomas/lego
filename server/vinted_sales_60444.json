@@ -1,90 +1,70 @@
 [
   {
-    "id": 5935781090,
     "title": "Lego City 60444 Formula Uno",
+    "lego_id": "60444",
     "brand_title": "LEGO",
     "price": {
       "amount": "55.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5935781090",
-    "photo": null,
     "total_item_price": {
       "amount": "58.45",
       "currency_code": "EUR"
     },
+    "published_time": "09/03/2025 00:02:16",
+    "url": "https://www.vinted.fr/items/5935781090",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 244768069,
-      "login": "armandodecurione00",
-      "profile_url": "https://www.vinted.fr/member/244768069-armandodecurione00",
-      "photo": "https://images1.vinted.net/t/02_00a91_1HLsaByo2KzJt4MgYAZhzxbn/f800/1733051510.jpeg?s=3855ad9951b309c3ea07fe6e65fc883b6f71b69b"
-    }
+    "user_name": "armandodecurione00"
   },
   {
-    "id": 5798071194,
     "title": "Lego 60444",
+    "lego_id": "60444",
     "brand_title": "LEGO",
     "price": {
       "amount": "71.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5798071194",
-    "photo": null,
     "total_item_price": {
       "amount": "75.25",
       "currency_code": "EUR"
     },
+    "published_time": "10/02/2025 21:41:26",
+    "url": "https://www.vinted.fr/items/5798071194",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 205712437,
-      "login": "michelesilvestri79",
-      "profile_url": "https://www.vinted.fr/member/205712437-michelesilvestri79",
-      "photo": "https://images1.vinted.net/t/01_010ab_p5d2qk1Ghi8X7okWUDPa11hH/f800/1715949577.jpeg?s=3787bed5014f2efadec9117d1d1055c15df7ef51"
-    }
+    "user_name": "michelesilvestri79"
   },
   {
-    "id": 1399078098,
     "title": "Lego 60444",
+    "lego_id": "60444",
     "brand_title": "LEGO",
     "price": {
       "amount": "15.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/1399078098",
-    "photo": null,
     "total_item_price": {
       "amount": "16.45",
       "currency_code": "EUR"
     },
+    "published_time": "25/10/2021 17:03:00",
+    "url": "https://www.vinted.fr/items/1399078098",
     "status": "Bon état",
-    "user": {
-      "id": 32972083,
-      "login": "wesley0501",
-      "profile_url": "https://www.vinted.fr/member/32972083-wesley0501",
-      "photo": "https://images1.vinted.net/t/01_020e9_TAn63bDvR2T8bQPDopqrE6Ha/f800/1666542154.jpeg?s=e208d1bf4930affac0a1e81958d75c7b8a087208"
-    }
+    "user_name": "wesley0501"
   },
   {
-    "id": 5850033571,
     "title": "Lego City 60444 - F1 Garage Mercedes-AMG & Alpine",
+    "lego_id": "60444",
     "brand_title": "LEGO",
     "price": {
       "amount": "69.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5850033571",
-    "photo": null,
     "total_item_price": {
       "amount": "73.15",
       "currency_code": "EUR"
     },
+    "published_time": "20/02/2025 20:21:08",
+    "url": "https://www.vinted.fr/items/5850033571",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 75841876,
-      "login": "octopuscos",
-      "profile_url": "https://www.vinted.fr/member/75841876-octopuscos",
-      "photo": "https://images1.vinted.net/t/04_0194d_A5NnDcD7QFyBEsUMrADqjv5w/f800/1739949105.jpeg?s=a04f8574715cb3dc61e51fc5c4a33b04e4e93156"
-    }
+    "user_name": "octopuscos"
   }
 ]

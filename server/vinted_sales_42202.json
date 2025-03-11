@@ -1,156 +1,121 @@
 [
   {
-    "id": 5863472729,
-    "title": "Lego Motocicletta Ducati Panigale V4 S set 42202",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "160.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5863472729",
-    "photo": null,
-    "total_item_price": {
-      "amount": "168.7",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf sans étiquette",
-    "user": {
-      "id": 181718284,
-      "login": "chiaracoc82",
-      "profile_url": "https://www.vinted.fr/member/181718284-chiaracoc82",
-      "photo": null
-    }
-  },
-  {
-    "id": 5935416102,
     "title": "Lego 42202 Ducati Panigale",
+    "lego_id": "42202",
     "brand_title": "LEGO",
     "price": {
       "amount": "159.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5935416102",
-    "photo": null,
     "total_item_price": {
       "amount": "167.65",
       "currency_code": "EUR"
     },
+    "published_time": "08/03/2025 21:44:30",
+    "url": "https://www.vinted.fr/items/5935416102",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 40278324,
-      "login": "kandyto99",
-      "profile_url": "https://www.vinted.fr/member/40278324-kandyto99",
-      "photo": "https://images1.vinted.net/t/03_0103e_RUJgmKuAQAp4qdc4z1nKWrye/f800/1665276572.jpeg?s=565546cbc498428d2acb6a7bda70a83f91bc1dea"
-    }
+    "user_name": "kandyto99"
   },
   {
-    "id": 5739682259,
-    "title": "Vendo lego 42202 ducati panigale v4 misb",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "160.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5739682259",
-    "photo": null,
-    "total_item_price": {
-      "amount": "168.7",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf avec étiquette",
-    "user": {
-      "id": 168210263,
-      "login": "marcopazz98",
-      "profile_url": "https://www.vinted.fr/member/168210263-marcopazz98",
-      "photo": "https://images1.vinted.net/t/01_01ae2_GvcMjn8fpttrveqNyyyYTvKG/f800/1698168432.jpeg?s=4e6747302418a7e01d621ac9a9b208df461422eb"
-    }
-  },
-  {
-    "id": 5824317456,
     "title": "Lego Motocicletta Ducati Panigale V4 S set 42202",
+    "lego_id": "42202",
     "brand_title": "LEGO",
     "price": {
       "amount": "160.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5824317456",
-    "photo": null,
     "total_item_price": {
       "amount": "168.7",
       "currency_code": "EUR"
     },
+    "published_time": "23/02/2025 12:58:42",
+    "url": "https://www.vinted.fr/items/5863472729",
     "status": "Neuf sans étiquette",
-    "user": {
-      "id": 176737061,
-      "login": "alberto081888",
-      "profile_url": "https://www.vinted.fr/member/176737061-alberto081888",
-      "photo": null
-    }
+    "user_name": "chiaracoc82"
   },
   {
-    "id": 5857464572,
-    "title": "Lego 42202 Ducati Panigali",
+    "title": "Vendo lego 42202 ducati panigale v4 misb",
+    "lego_id": "42202",
     "brand_title": "LEGO",
     "price": {
       "amount": "160.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5857464572",
-    "photo": null,
     "total_item_price": {
       "amount": "168.7",
       "currency_code": "EUR"
     },
+    "published_time": "31/01/2025 11:34:43",
+    "url": "https://www.vinted.fr/items/5739682259",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 199161005,
-      "login": "joaorebe",
-      "profile_url": "https://www.vinted.fr/member/199161005-joaorebe",
-      "photo": "https://images1.vinted.net/t/02_015a4_Bygk7S6kVwyeSms7zFhCw2tY/f800/1713184996.jpeg?s=7e366dc2d02326426ab07b50c3006d6686a42872"
-    }
+    "user_name": "marcopazz98"
   },
   {
-    "id": 5843427221,
+    "title": "Lego Motocicletta Ducati Panigale V4 S set 42202",
+    "lego_id": "42202",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "160.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "168.7",
+      "currency_code": "EUR"
+    },
+    "published_time": "16/02/2025 12:32:17",
+    "url": "https://www.vinted.fr/items/5824317456",
+    "status": "Neuf sans étiquette",
+    "user_name": "alberto081888"
+  },
+  {
+    "title": "Lego 42202 Ducati Panigali",
+    "lego_id": "42202",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "160.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "168.7",
+      "currency_code": "EUR"
+    },
+    "published_time": "22/02/2025 13:03:27",
+    "url": "https://www.vinted.fr/items/5857464572",
+    "status": "Neuf avec étiquette",
+    "user_name": "joaorebe"
+  },
+  {
     "title": "Lego 42202",
+    "lego_id": "42202",
     "brand_title": "LEGO",
     "price": {
       "amount": "199.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5843427221",
-    "photo": null,
     "total_item_price": {
       "amount": "209.65",
       "currency_code": "EUR"
     },
+    "published_time": "19/02/2025 16:26:10",
+    "url": "https://www.vinted.fr/items/5843427221",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 243485426,
-      "login": "gabrin81",
-      "profile_url": "https://www.vinted.fr/member/243485426-gabrin81",
-      "photo": "https://images1.vinted.net/t/02_00cf2_t2PAVq8gvbHBTwfn5ctFha2Y/f800/1735307302.jpeg?s=5bf804bd9a341f9f6af4b6042bedf0f4ddf944db"
-    }
+    "user_name": "gabrin81"
   },
   {
-    "id": 5719531204,
     "title": "Lego 42130 BMW M 1000 RR Nuovo s sigillato",
+    "lego_id": "42130",
     "brand_title": "LEGO",
     "price": {
       "amount": "190.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5719531204",
-    "photo": null,
     "total_item_price": {
       "amount": "200.2",
       "currency_code": "EUR"
     },
+    "published_time": "27/01/2025 10:53:18",
+    "url": "https://www.vinted.fr/items/5719531204",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 116888856,
-      "login": "beppe1414",
-      "profile_url": "https://www.vinted.fr/member/116888856-beppe1414",
-      "photo": "https://images1.vinted.net/t/03_007d7_w8wnjkWJY2JkPfiGQTB8JrCu/f800/1666983257.jpeg?s=4e35ba4568c15338494c5691704ead0c7a828902"
-    }
+    "user_name": "beppe1414"
   }
 ]

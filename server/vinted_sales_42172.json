@@ -1,266 +1,189 @@
 [
   {
-    "id": 5910104241,
-    "title": "Lego McLaren P1 42172",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "280.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5910104241",
-    "photo": null,
-    "total_item_price": {
-      "amount": "294.7",
-      "currency_code": "EUR"
-    },
-    "status": "Très bon état",
-    "user": {
-      "id": 145486039,
-      "login": "rubensanpa",
-      "profile_url": "https://www.vinted.fr/member/145486039-rubensanpa",
-      "photo": null
-    }
-  },
-  {
-    "id": 5898843674,
     "title": "42172 Lego McLaren P1",
+    "lego_id": "42172",
     "brand_title": "LEGO",
     "price": {
       "amount": "340.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5898843674",
-    "photo": null,
     "total_item_price": {
       "amount": "357.7",
       "currency_code": "EUR"
     },
+    "published_time": "01/03/2025 23:07:18",
+    "url": "https://www.vinted.fr/items/5898843674",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 188685889,
-      "login": "orangeitaly19",
-      "profile_url": "https://www.vinted.fr/member/188685889-orangeitaly19",
-      "photo": "https://images1.vinted.net/t/01_001ea_EUGRfKbga4qMPZjmgoGxUQTW/f800/1717438282.jpeg?s=8079ce24829d59317ded09a712af4dc9f7ae317e"
-    }
+    "user_name": "orangeitaly19"
   },
   {
-    "id": 5489855055,
     "title": "Lego 41172 Elves L'aventure de Merina",
+    "lego_id": "41172",
     "brand_title": "LEGO",
     "price": {
       "amount": "15.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5489855055",
-    "photo": null,
     "total_item_price": {
       "amount": "16.45",
       "currency_code": "EUR"
     },
+    "published_time": "06/12/2024 11:00:26",
+    "url": "https://www.vinted.fr/items/5489855055",
     "status": "Très bon état",
-    "user": {
-      "id": 163717335,
-      "login": "top-occaz-jouet",
-      "profile_url": "https://www.vinted.fr/member/163717335-top-occaz-jouet",
-      "photo": "https://images1.vinted.net/t/01_018f7_WVccr8tYm5aBXvaub8BGxGet/f800/1698433960.jpeg?s=9c16d34f3fc806429d94f13782ef23a998235a3d"
-    }
+    "user_name": "top-occaz-jouet"
   },
   {
-    "id": 5930101225,
     "title": "Mclaren P1 LEGO 42172",
+    "lego_id": "42172",
     "brand_title": "LEGO",
     "price": {
       "amount": "300.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5930101225",
-    "photo": null,
     "total_item_price": {
       "amount": "315.7",
       "currency_code": "EUR"
     },
+    "published_time": "07/03/2025 22:03:48",
+    "url": "https://www.vinted.fr/items/5930101225",
     "status": "Très bon état",
-    "user": {
-      "id": 169145655,
-      "login": "joostsm",
-      "profile_url": "https://www.vinted.fr/member/169145655-joostsm",
-      "photo": "https://images1.vinted.net/t/04_005b6_FyTmbFJu2EHBmey47P7oEJrU/f800/1737484956.jpeg?s=ff12b0de93e71d9ef5d61f18d66f940fa510211d"
-    }
+    "user_name": "joostsm"
   },
   {
-    "id": 5839358041,
-    "title": "Lego 42172",
-    "brand_title": "LEGO",
-    "price": {
-      "amount": "400.0",
-      "currency_code": "EUR"
-    },
-    "url": "https://www.vinted.fr/items/5839358041",
-    "photo": null,
-    "total_item_price": {
-      "amount": "420.7",
-      "currency_code": "EUR"
-    },
-    "status": "Neuf sans étiquette",
-    "user": {
-      "id": 145597815,
-      "login": "toydoll1974",
-      "profile_url": "https://www.vinted.fr/member/145597815-toydoll1974",
-      "photo": "https://images1.vinted.net/t/03_01fd8_Hb8Gj1e66fYG1fZDn3NdWFSC/f800/1708709177.jpeg?s=8b5d067ab26c63f51224cca4db2d9de8c88beecf"
-    }
-  },
-  {
-    "id": 5460933845,
     "title": "Lego Technic McLaren P1",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
       "amount": "265.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5460933845",
-    "photo": null,
     "total_item_price": {
       "amount": "278.95",
       "currency_code": "EUR"
     },
+    "published_time": "29/11/2024 23:29:48",
+    "url": "https://www.vinted.fr/items/5460933845",
     "status": "Neuf sans étiquette",
-    "user": {
-      "id": 184286480,
-      "login": "batdargent",
-      "profile_url": "https://www.vinted.fr/member/184286480-batdargent",
-      "photo": null
-    }
+    "user_name": "batdargent"
   },
   {
-    "id": 5366188940,
+    "title": "Lego 42172",
+    "lego_id": "42172",
+    "brand_title": "LEGO",
+    "price": {
+      "amount": "400.0",
+      "currency_code": "EUR"
+    },
+    "total_item_price": {
+      "amount": "420.7",
+      "currency_code": "EUR"
+    },
+    "published_time": "18/02/2025 19:43:31",
+    "url": "https://www.vinted.fr/items/5839358041",
+    "status": "Neuf sans étiquette",
+    "user_name": "toydoll1974"
+  },
+  {
     "title": "Lego McLaren 42172",
+    "lego_id": "42172",
     "brand_title": "LEGO",
     "price": {
       "amount": "350.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5366188940",
-    "photo": null,
     "total_item_price": {
       "amount": "368.2",
       "currency_code": "EUR"
     },
+    "published_time": "11/11/2024 15:43:37",
+    "url": "https://www.vinted.fr/items/5366188940",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 45030694,
-      "login": "curly_.may",
-      "profile_url": "https://www.vinted.fr/member/45030694-curlymay",
-      "photo": "https://images1.vinted.net/t/02_017a7_aihzg4EqcVVn7UWk5beLbBy7/f800/1649680027.jpeg?s=639b0e3593b125c58996dae4788d145729629652"
-    }
+    "user_name": "curly_.may"
   },
   {
-    "id": 5786698303,
     "title": "Lego Technik Lamborghini Sian FKP 37 42115 OVP & NEU",
+    "lego_id": "42115",
     "brand_title": "LEGO",
     "price": {
       "amount": "340.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5786698303",
-    "photo": null,
     "total_item_price": {
       "amount": "357.7",
       "currency_code": "EUR"
     },
+    "published_time": "09/02/2025 10:39:03",
+    "url": "https://www.vinted.fr/items/5786698303",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 46776118,
-      "login": "bendix_g",
-      "profile_url": "https://www.vinted.fr/member/46776118-bendixg",
-      "photo": null
-    }
+    "user_name": "bendix_g"
   },
   {
-    "id": 5721761052,
     "title": "Lego 42172 McLaren P1",
+    "lego_id": "42172",
     "brand_title": "LEGO",
     "price": {
       "amount": "419.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5721761052",
-    "photo": null,
     "total_item_price": {
       "amount": "440.65",
       "currency_code": "EUR"
     },
+    "published_time": "27/01/2025 16:38:12",
+    "url": "https://www.vinted.fr/items/5721761052",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 84374687,
-      "login": "ali2925",
-      "profile_url": "https://www.vinted.fr/member/84374687-ali2925",
-      "photo": "https://images1.vinted.net/t/02_01699_3uo4mhtkVpcVrM4Lr2HNFyXv/f800/1651672649.jpeg?s=04ddf00d6022e15ee15f2da5751459c5e41af579"
-    }
+    "user_name": "ali2925"
   },
   {
-    "id": 5342282403,
     "title": "Lego Technic 42172 McLaren P1",
+    "lego_id": "42172",
     "brand_title": "LEGO",
     "price": {
       "amount": "360.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5342282403",
-    "photo": null,
     "total_item_price": {
       "amount": "378.7",
       "currency_code": "EUR"
     },
+    "published_time": "07/11/2024 11:33:40",
+    "url": "https://www.vinted.fr/items/5342282403",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 85223987,
-      "login": "marcoacsimoes",
-      "profile_url": "https://www.vinted.fr/member/85223987-marcoacsimoes",
-      "photo": "https://images1.vinted.net/t/02_020c8_XBzzRXAmobpMQWnjcjX7yQuB/f800/1738365509.jpeg?s=b4639343e20e834502016c51b1b7facaeaca6e3c"
-    }
+    "user_name": "marcoacsimoes"
   },
   {
-    "id": 5524086509,
     "title": "Lego technic",
+    "lego_id": null,
     "brand_title": "LEGO",
     "price": {
       "amount": "415.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5524086509",
-    "photo": null,
     "total_item_price": {
       "amount": "436.45",
       "currency_code": "EUR"
     },
+    "published_time": "14/12/2024 09:53:19",
+    "url": "https://www.vinted.fr/items/5524086509",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 243485426,
-      "login": "gabrin81",
-      "profile_url": "https://www.vinted.fr/member/243485426-gabrin81",
-      "photo": "https://images1.vinted.net/t/02_00cf2_t2PAVq8gvbHBTwfn5ctFha2Y/f800/1735307302.jpeg?s=5bf804bd9a341f9f6af4b6042bedf0f4ddf944db"
-    }
+    "user_name": "gabrin81"
   },
   {
-    "id": 5078676675,
     "title": "Lego 42172",
+    "lego_id": "42172",
     "brand_title": "LEGO",
     "price": {
       "amount": "369.0",
       "currency_code": "EUR"
     },
-    "url": "https://www.vinted.fr/items/5078676675",
-    "photo": null,
     "total_item_price": {
       "amount": "388.15",
       "currency_code": "EUR"
     },
+    "published_time": "20/09/2024 22:54:07",
+    "url": "https://www.vinted.fr/items/5078676675",
     "status": "Neuf avec étiquette",
-    "user": {
-      "id": 80220586,
-      "login": "samuarauzo14",
-      "profile_url": "https://www.vinted.fr/member/80220586-samuarauzo14",
-      "photo": "https://images1.vinted.net/t/03_01960_XKWmFRe3mYGXz15mgSSNSKiS/f800/1643465022.jpeg?s=73d3c94a63803e8acf94c5bfd40ad94ffb0fd426"
-    }
+    "user_name": "samuarauzo14"
   }
 ]
