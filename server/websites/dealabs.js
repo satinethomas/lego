@@ -21,32 +21,30 @@ const parse = data => {
       const price = thread.price;
       const originalPrice = thread.nextBestPrice;
 
-      // Vérifier que le prix actuel est défini et différent de 0
       if (!price || price === 0) return null;
 
-      // Vérifier que le prix original est bien défini et supérieur au prix actuel
       let discount = null;
       if (originalPrice && originalPrice > price) {
         discount = Number((((originalPrice - price) * 100) / originalPrice).toFixed(0));
       }
 
-      // Construction manuelle de l'URL de l'image
       let imageUrl = null;
       if (thread.mainImage) {
         const { path, name, ext } = thread.mainImage;
         imageUrl = `https://static.dealabs.com/${path}/${name}.${ext}`;
       }
 
-      
-
-
+      const title = thread.title;
+      const legoIdMatch = title.match(/\d{4,6}/); // ID LEGO = 4 à 6 chiffres
+      const legoId = legoIdMatch ? legoIdMatch[0] : null;
 
       return {
-        title: thread.title,
-        price: price, 
-        originalPrice: originalPrice, 
+        title: title,
+        legoId: legoId, 
+        price: price,
+        originalPrice: originalPrice,
         discount: discount,
-        post_date : thread.publishedAt,post_date: new Date(thread.publishedAt * 1000).toLocaleString(),
+        post_date: new Date(thread.publishedAt * 1000).toLocaleString(),
         temperature: thread.temperature,
         nb_comments: thread.commentCount,
         link: thread.link,
@@ -56,8 +54,9 @@ const parse = data => {
       console.error("Erreur de parsing JSON :", error);
       return null;
     }
-  }).get().filter(deal => deal !== null); // Filtrer les null pour éviter les entrées invalides
+  }).get().filter(deal => deal !== null && deal.legoId); // N'avoir que des set avec legoId dans le titre (éviter les jeux ps4/switch)
 };
+
 
 /**
  * Scrape a given URL
