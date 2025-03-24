@@ -5,13 +5,14 @@ const express = require('express');
 const helmet = require('helmet');
 const { MongoClient } = require('mongodb');
 
-const app = express();
 const PORT = 8092;
 
 // Configuration MongoDB
 const MONGODB_URI = 'mongodb+srv://satinetms:IloveWebDesign8@cluster0.108zm.mongodb.net/lego?retryWrites=true&writeConcern=majority';
 const DB_NAME = 'lego';
-let db; // On va y stocker l’accès à la base
+
+
+const app = express();
 
 // Middlewares
 app.use(require('body-parser').json());
@@ -19,40 +20,33 @@ app.use(cors());
 app.use(helmet());
 app.options('*', cors());
 
+let db; // On va y stocker l’accès à la base
+
 //  Connexion à MongoDB
-MongoClient.connect(MONGODB_URI)
-  .then(client => {
-    db = client.db(DB_NAME);
-    console.log('Connexion à MongoDB réussie');
-  })
-  .catch(err => {
-    console.error('Erreur de connexion MongoDB :', err);
-  });
+// Connexion à MongoDB
+async function connectDB() {
+  const client = new MongoClient(MONGODB_URI);
+  await client.connect();
+  db = client.db(DB_NAME);
+  console.log(" Connected to MongoDB");
+}
+
+// Fermer la connexion MongoDB
+async function closeDB() {
+  if (db) {
+      await db.client.close();
+      console.log("MongoDB connection closed.");
+  }
+}
 
 // Route racine de test
 app.get('/', (req, res) => {
   res.send({ ack: true });
 });
 
-// Route pour récupérer un deal spécifique par ID
-/*app.get('/deals/:id', async (req, res) => {
-  const dealId = req.params.id;
-
-  try {
-    const deal = await db.collection('deals').findOne({ legoId: dealId });
-
-    if (!deal) {
-      return res.status(404).json({ error: 'Deal non trouvé' });
-    }
-
-    res.json(deal);
-  } catch (err) {
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-});*/
 
 // Récupérer deals spécifiques avec des conditions (limit, price, date, filterby...)
-/*app.get('/deals/search', async (req, res) => {
+app.get('/deals/search', async (req, res) => {
   const { limit = 12, price, date, filterBy } = req.query;
   const query = {};
 
@@ -100,7 +94,7 @@ app.get('/', (req, res) => {
     console.error('Erreur deals/search :', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
-});/*
+});
 
 /*Exemple de commandes dans INSOMNIA
 GET http://localhost:8092/deals/search?filterBy=most-commented&limit=5
@@ -136,11 +130,57 @@ app.get('/sales/search', async (req, res) => {
   }
 });
 
+// Route pour récupérer un deal spécifique par ID
+app.get('/deals/:id', async (req, res) => {
+  const dealId = req.params.id;
+
+  try {
+    const deal = await db.collection('deals').findOne({ legoId: dealId });
+
+    if (!deal) {
+      return res.status(404).json({ error: 'Deal non trouvé' });
+    }
+
+    res.json(deal);
+  } catch (err) {
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
 
 
 // Démarrer le serveur
-app.listen(PORT, () => {
-  console.log(`📡 Serveur Express lancé sur http://localhost:${PORT}`);
+//app.listen(PORT, () => {
+//  console.log(`📡 Serveur Express lancé sur http://localhost:${PORT}`);
+//});
+
+// Lancer le serveur et connecter à MongoDB
+async function startServer() {
+  try {
+      await connectDB();
+
+      app.listen(PORT, () => {
+          console.log("Serveur en cours d'exécution sur le port ${PORT}");
+      });
+
+  } catch (error) {
+      console.error('Erreur de connexion à MongoDB:', error);
+      process.exit(1);
+  }
+}
+
+// Exporter le handler pour Vercel
+module.exports = async (req, res) => {
+  if (!db) {
+      await connectDB();
+  }
+  return app(req, res);
+};
+
+// Arrêt propre de la connexion MongoDB
+process.on('SIGINT', async () => {
+  await closeDB();
+  process.exit(0);
 });
 
-module.exports = app;
+startServer();
