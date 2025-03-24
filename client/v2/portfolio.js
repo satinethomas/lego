@@ -337,7 +337,7 @@ const fetchSales = async (legoSetId) => {
     return body.results.map(sale => ({
       title: sale.title,
       price: parseFloat(sale.price?.amount || 0),
-      published: new Date(sale.published_time), // Date JS utilisable
+      published: parsePublishedTime(sale.published_time), // Date JS utilisable
       link: sale.url
     }));
   } catch (error) {
@@ -345,6 +345,22 @@ const fetchSales = async (legoSetId) => {
     return [];
   }
 };
+
+const parsePublishedTime = (str) => {
+  if (!str || typeof str !== 'string') return null;
+
+  // attend un format "DD/MM/YYYY HH:mm:ss"
+  const [datePart, timePart] = str.split(' ');
+  const [day, month, year] = datePart.split('/');
+
+  if (!day || !month || !year || !timePart) return null;
+
+  const isoString = `${year}-${month}-${day}T${timePart}`;
+  const date = new Date(isoString);
+
+  return isNaN(date.getTime()) ? null : date;
+};
+
 
 /**
  * Fetch and display sales for the selected Lego set when the page loads or when a new set is selected
