@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
 
 // Récupérer deals spécifiques avec des conditions (limit, price, date, filterby...)
 app.get('/deals/search', async (req, res) => {
-  const { limit = 12, price, date, filterBy } = req.query;
+  const { limit = 30, price, date, filterBy } = req.query;
   const query = {};
 
   // Filtrer par prix maximum
@@ -105,7 +105,7 @@ GET http://localhost:8092/deals/search?price=25
 
 
 app.get('/sales/search', async (req, res) => {
-  const { limit = 12, legoSetId } = req.query; //limite 12 d'office mais on peut modifier quand on search
+  const { limit = 700, legoSetId } = req.query; //limite 12 d'office mais on peut modifier quand on search
   const query = {}; // remplissage selon filtres demandés
 
   if (legoSetId) {
@@ -149,7 +149,7 @@ app.get('/deals/:id', async (req, res) => {
 
 
 
-// Démarrer le serveur
+// Démarrer le serveur pour 8092
 //app.listen(PORT, () => {
 //  console.log(`📡 Serveur Express lancé sur http://localhost:${PORT}`);
 //});

@@ -54,19 +54,18 @@ const setCurrentDeals = ({result, meta}) => {
 const fetchDeals = async (page = 1, size = 6) => {
   try {
     const response = await fetch(
-      `https://lego-api-blue.vercel.app/deals?page=${page}&size=${size}`
+      `https://lego-ten.vercel.app/deals/search?limit=${size}`
     );
+    
     const body = await response.json();
 
-    if (body.success !== true) {
-      console.error(body);
-      return {currentDeals, currentPagination};
-    }
-
-    return body.data;
+    return {
+      result: body.results, // ← ton backend renvoie .results
+      meta: { count: body.total, currentPage: 1, pageCount: 1 }
+    };
   } catch (error) {
     console.error(error);
-    return {currentDeals, currentPagination};
+    return { result: [], meta: {} };
   }
 };
 
@@ -80,11 +79,11 @@ const renderDeals = deals => {
   const template = deals
     .map(deal => {
       return `
-      <div class="deal" id="${deal.uuid}">
-        <span>${deal.id}</span>
+      <div class="deal" id="${deal.legoId}">
+        <span>${deal.legoId}</span>
         <a href="${deal.link}">${deal.title}</a>
         <span>${deal.price}</span>
-        <button class="favorite-btn" data-id="${deal.uuid}">Add to Favorites</button>
+        <button class="favorite-btn" data-id="${deal.legoId}">Add to Favorites</button>
       </div>
     `;
     })
@@ -124,6 +123,7 @@ const renderLegoSetIds = deals => {
 
   selectLegoSetIds.innerHTML = options;
 };
+
 
 /**
  * Render page selector
@@ -329,25 +329,17 @@ const calculateLifetime = (sales) => {
  */
 const fetchSales = async (legoSetId) => {
   try {
-    const url = `https://lego-api-blue.vercel.app/sales?id=${legoSetId}`;
-    console.log('Fetching sales from:', url);
+    const url = `https://lego-ten.vercel.app/sales/search?legoSetId=${legoSetId}`;
 
     const response = await fetch(url);
-
-    if (!response.ok) {
-      console.error('HTTP Error:', response.status, response.statusText);
-      return [];
-    }
-
     const body = await response.json();
-    console.log('API Response:', body);
 
-    if (!body.success) {
-      console.error('Failed to fetch sales:', body);
-      return [];
-    }
-
-    return body.data.result;
+    return body.results.map(sale => ({
+      title: sale.title,
+      price: parseFloat(sale.price?.amount || 0),
+      published: new Date(sale.published_time), // Date JS utilisable
+      link: sale.url
+    }));
   } catch (error) {
     console.error('Error fetching sales:', error);
     return [];
