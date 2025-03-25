@@ -474,6 +474,37 @@ document.addEventListener('click', (event) => {
 });
 
 
+// Avoir toutes les pages
+const showPage = (id) => {
+  ['home-page', 'manual-page', 'auto-page', 'favorites-page'].forEach(pid => {
+    document.getElementById(pid).style.display = (pid === id) ? 'block' : 'none';
+  });
+};
+
+document.getElementById('btn-myself').addEventListener('click', async () => {
+  showPage('manual-page');
+  const deals = await fetchDeals();
+  setCurrentDeals(deals);
+  render(deals.result, deals.meta);
+});
+
+document.getElementById('btn-auto').addEventListener('click', async () => {
+  showPage('auto-page');
+  const bestDeals = await fetchDeals(1, 12, 'best-discount');
+  const container = document.getElementById('auto-deals');
+  container.innerHTML = '';
+  bestDeals.result.forEach(deal => {
+    const card = document.createElement('div');
+    card.className = 'deal-card';
+    card.innerHTML = `
+      <img src="${deal.image}" alt="${deal.title}" />
+      <h3>${deal.title}</h3>
+      <p>€${deal.price} — ${deal.discount}%</p>
+      <a href="${deal.link}" target="_blank">View</a>
+    `;
+    container.appendChild(card);
+  });
+});
 
 
 

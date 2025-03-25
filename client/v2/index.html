@@ -5,6 +5,59 @@
     <title>🧱 Lego | Predictability of a lego set deal</title>
 
     <style>
+
+
+/* PAGE D'ACCUEIL - home-page */
+#home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f4f8, #dbe9f4);
+  border-radius: 16px;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+#home-page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+#home-page h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 18px 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 200px;
+}
+
+.home-buttons button:hover {
+  background-color: #005dc1;
+  transform: scale(1.05);
+}
+
       .deal-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Avant c'était 280px */
@@ -258,13 +311,45 @@ section {
   background-color: #5a6268;
 }
 
+.back-btn {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
 
     </style>
   </head>
   <body>
-    <h1>Find the best deal !</h1>
+    <!-- PAGE 1: Home -->
+    <section id="home-page">
+      <h1>Find the best deals !</h1>
+      <h2>Welcome! Let us help you find the best LEGO deals. Or do it by yourself</h2>
+      <div class="home-buttons">
+        <button id="btn-auto">Do it for me</button>
+        <button id="btn-myself">By myself</button>
+      </div>
+      <h2>Last scrape : 24/03/2025</h2>
+    </section>
+    
+
+  <!-- PAGE 2: By Myself -->
+  <section id="manual-page" style="display:none;">
+    <h1>Find the best deal!</h1>
+    <h2>You can search the best deal by yourself.</h2>
+
     <button id="filter-favorites">Show Favorites</button>
     <button id="show-all" style="display:none;">Show All</button>
+    <button onclick="showPage('home-page')" class="back-btn">← Back to Home</button>
 
     <section id="options">
       <div id="show">
@@ -280,11 +365,10 @@ section {
         <select name="page" id="page-select"> </select>
       </div>
       <div id="filters">
-        <label for="order-selection">Order by : </label>
+        <label for="order-selection">Order by:</label>
         <input type="button" id="best-discount" value="By best discount" />
         <input type="button" id="most-commented" value="By most commented" />
         <input type="button" id="hot-deals" value="By hot deals"/>
-
       </div>
       <div id="sort">
         <label for="sort-select">Sort:</label>
@@ -296,50 +380,47 @@ section {
         </select>
       </div>
     </section>
+
     <section id="lego">
       <label for="lego-set-id-select">Select an id to display the Vinted sales</label>
       <select id="lego-set-id-select">
         <option disabled selected value="">Select an id</option>
       </select>
-       
     </section>
+
     <section id="indicators">
       <h2>Indicators</h2>
       <div class="indicator-grid">
-        <div class="indicator-badge">
-          Number of deals
-          <span class="value" id="nbDeals">0</span>
-        </div>
-        <div class="indicator-badge">
-          Number of sales
-          <span class="value" id="nbSales">0</span>
-        </div>
-        <div class="indicator-badge">
-          p5 sales price
-          <span class="value" id="p5Price">0</span>
-        </div>
-        <div class="indicator-badge">
-          p25 sales price
-          <span class="value" id="p25Price">0</span>
-        </div>
-        <div class="indicator-badge">
-          p50 sales price
-          <span class="value" id="p50Price">0</span>
-        </div>
-        <div class="indicator-badge">
-          Lifetime value
-          <span class="value" id="lifetimeValue">0 days</span>
-        </div>
+        <div class="indicator-badge">Number of deals <span class="value" id="nbDeals">0</span></div>
+        <div class="indicator-badge">Number of sales <span class="value" id="nbSales">0</span></div>
+        <div class="indicator-badge">p5 sales price <span class="value" id="p5Price">0</span></div>
+        <div class="indicator-badge">p25 sales price <span class="value" id="p25Price">0</span></div>
+        <div class="indicator-badge">p50 sales price <span class="value" id="p50Price">0</span></div>
+        <div class="indicator-badge">Lifetime value <span class="value" id="lifetimeValue">0 days</span></div>
       </div>
     </section>
-       
+
     <div class="main-layout">
       <section id="deals"></section>
       <section id="vinted-sales-section">
         <h2>Vinted Sales</h2>
-        <!-- Les ventes apparaîtront ici -->
       </section>
     </div>
+  </section>
+
+  <!-- PAGE 3: Auto / Best Deals -->
+  <section id="auto-page" style="display:none;">
+    <h1>Best Deals Selected for You</h1>
+    <button onclick="showPage('home-page')" class="back-btn">← Back to Home</button>
+    <div id="auto-deals" class="deal-container"></div>
+  </section>
+
+  <!-- PAGE 4: Favorites -->
+  <section id="favorites-page" style="display:none;">
+    <h1>My Favorites</h1>
+    <button onclick="showPage('home-page')" class="back-btn">← Back to Home</button>
+    <div id="favorites-deals" class="deal-container"></div>
+  </section>
     
     <script type="text/javascript" charset="UTF-8" src="utils.js"></script>
     <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
