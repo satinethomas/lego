@@ -99,7 +99,7 @@ const renderDeals = deals => {
     <p><strong>NbComments:</strong> ${deal.nb_comments}</p>
     <p><strong>Température:</strong> ${deal.temperature}</p>
     <p><strong>Date:</strong> ${deal.post_date}</p>
-    <a href="${deal.link}" target="_blank">Voir l'annonce</a>
+    <a href="${deal.link}" target="_blank">View</a>
     <button class="favorite-btn" data-id="${deal.legoId}">
       ${isFavorite ? '✓ Added' : 'Add to Favorites'}
     </button>
@@ -506,6 +506,78 @@ document.getElementById('btn-auto').addEventListener('click', async () => {
   });
 });
 
+
+
+//Page Do it for me 
+
+// Fonction pour calculer un score de revente
+const getResaleScore = (deal, indicators) => {
+  let score = 0;
+  const { p25, p50, count, lifetimeDays } = indicators;
+  const price = deal.price;
+
+  if (price < p25) score += 2;
+  else if (price < p50) score += 1;
+
+  if (lifetimeDays && lifetimeDays < 15) score += 1;
+  if (count >= 5) score += 1;
+  if (deal.discount >= 20) score += 1;
+
+  return score;
+};
+
+// Fonction pour afficher les meilleurs deals dans la page auto
+const renderAutoDeals = (deals) => {
+  const container = document.getElementById('auto-deals');
+  container.innerHTML = ''; // reset
+
+  if (!deals.length) {
+    container.innerHTML = '<p>No good deals found for resale 🤷‍♂️</p>';
+    return;
+  }
+
+  const html = deals.map(deal => `
+    <div class="deal-card">
+      <img src="${deal.image}" alt="${deal.title}" />
+      <h3>${deal.title}</h3>
+      <p><strong>ID:</strong> ${deal.legoId}</p>
+      <p><strong>Price:</strong> €${deal.price}</p>
+      <p><strong>Discount:</strong> ${deal.discount}%</p>
+      <p><strong>NbComments:</strong> ${deal.nb_comments}</p>
+      <a href="${deal.link}" target="_blank">View</a>
+    </div>
+  `).join('');
+
+  container.innerHTML = html;
+};
+
+// Fonction principale de la page auto
+const fetchBestDeals = async () => {
+  const scoredDeals = [];
+
+  // currentDeals contient déjà les deals chargés au début
+  for (const deal of currentDeals) {
+    try {
+      const res = await fetch(`https://lego-ten.vercel.app/sales/indicators?legoSetId=${deal.legoId}`);
+      const indicators = await res.json();
+
+      if (!indicators?.count) continue;
+
+      const score = getResaleScore(deal, indicators);
+      if (score >= 3) scoredDeals.push({ deal, score });
+    } catch (e) {
+      console.warn(`Erreur indicateurs pour ${deal.legoId}`);
+    }
+  }
+
+  scoredDeals.sort((a, b) => b.score - a.score);
+  renderAutoDeals(scoredDeals.map(d => d.deal));
+};
+
+document.getElementById('btn-auto').addEventListener('click', () => {
+  showPage('auto-page');
+  fetchBestDeals(); // ← ici on déclenche l’analyse
+});
 
 
 document.addEventListener('DOMContentLoaded', async () => {

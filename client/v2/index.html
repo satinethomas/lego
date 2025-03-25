@@ -297,7 +297,7 @@ section {
 }
 
 #show-all {
-  background-color: #6c757d; /* gris foncé, pour changer un peu */
+  background-color: #6c757d; 
   color: white;
   border: none;
   padding: 8px 14px;
@@ -409,9 +409,20 @@ section {
   </section>
 
   <!-- PAGE 3: Auto / Best Deals -->
-  <section id="auto-page" style="display:none;">
-    <h1>Best Deals Selected for You</h1>
+  <section id="auto-page" style="display: none;">
+    <h1>Best Deals Selected for You </h1>
     <button onclick="showPage('home-page')" class="back-btn">← Back to Home</button>
+    <div style="text-align: center; max-width: 600px; margin: 1.5rem auto; background: #f9f9f9; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); font-size: 1rem;">
+      <h3>How is the resale score calculated?</h3>
+      <ul style="list-style: none; padding-left: 0; text-align: left; line-height: 1.6;">
+        <li>+2 points if deal price < p25 Vinted price</li>
+        <li>+1 point if deal price < p50 Vinted price</li>
+        <li>+1 point if lifetime value < 15 days</li>
+        <li>+1 point if number of Vinted sales ≥ 5</li>
+        <li>+1 point if discount ≥ 20%</li>
+      </ul>
+      <strong>Only deals with a score ≥ 3 are shown.</strong>
+    </div>    
     <div id="auto-deals" class="deal-container"></div>
   </section>
 
