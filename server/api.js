@@ -47,22 +47,31 @@ app.get('/', (req, res) => {
 
 // Récupérer deals spécifiques avec des conditions (limit, price, date, filterby...)
 app.get('/deals/search', async (req, res) => {
-  const { limit = 30, price, date, filterBy } = req.query;
-  const query = {};
+  const {
+    limit = 30,
+    page = 1,
+    price,
+    date,
+    filterBy
+  } = req.query;
 
-  // Filtrer par prix maximum
+  const query = {};
+  const pageNum = parseInt(page);
+  const limitNum = parseInt(limit);
+  const skip = (pageNum - 1) * limitNum;
+
+  // Filtrer par prix max
   if (price) {
     query.price = { $lte: parseFloat(price) };
   }
 
-  // Filtrer par jour précis (ex: 18/03/2025)
+  // Filtrer par date
   if (date) {
     try {
       const userDate = new Date(date);
       const day = userDate.getDate().toString().padStart(2, '0');
       const month = (userDate.getMonth() + 1).toString().padStart(2, '0');
       const year = userDate.getFullYear();
-
       const regexDate = `${day}/${month}/${year}`;
       query.post_date = { $regex: `^${regexDate}` };
     } catch (err) {
@@ -70,24 +79,49 @@ app.get('/deals/search', async (req, res) => {
     }
   }
 
-  // Tri selon filtre
-  let sort = { price: 1 };
-  if (filterBy === 'best-discount') {
-    sort = { discount: -1 };
-  } else if (filterBy === 'most-commented') {
-    sort = { nb_comments: -1 };
+  // Définir les tris selon le paramètre `filterBy`
+  let sort = {};
+  switch (filterBy) {
+    case 'best-discount':
+      sort = { discount: -1 };
+      break;
+    case 'most-commented':
+      sort = { nb_comments: -1 };
+      break;
+    case 'hot-deals':
+      sort = { temperature: -1 };
+      break;
+    case 'price-asc':
+      sort = { price: 1 };
+      break;
+    case 'price-desc':
+      sort = { price: -1 };
+      break;
+    case 'date-asc':
+      sort = { post_date: 1 };
+      break;
+    case 'date-desc':
+      sort = { post_date: -1 };
+      break;
+    default:
+      sort = {}; // Pas de tri explicite
   }
 
   try {
-    const results = await db.collection('deals')
+    const collection = db.collection('deals');
+    const total = await collection.countDocuments(query);
+
+    const results = await collection
       .find(query)
       .sort(sort)
-      .limit(parseInt(limit))
+      .skip(skip)
+      .limit(limitNum)
       .toArray();
 
     res.json({
-      limit: parseInt(limit),
-      total: results.length,
+      limit: limitNum,
+      total,
+      page: pageNum,
       results
     });
   } catch (err) {
@@ -95,6 +129,7 @@ app.get('/deals/search', async (req, res) => {
     res.status(500).json({ error: 'Erreur serveur' });
   }
 });
+
 
 /*Exemple de commandes dans INSOMNIA
 GET http://localhost:8092/deals/search?filterBy=most-commented&limit=5
@@ -146,6 +181,108 @@ app.get('/deals/:id', async (req, res) => {
     res.status(500).json({ error: 'Erreur serveur' });
   }
 });
+
+//Route pour les favoris
+app.get('/favorites', async (req, res) => {
+  try {
+    const favorites = await db.collection('favorites').find({}).toArray();
+    res.json({ favorites: favorites.map(f => f.legoId) });
+  } catch (err) {
+    res.status(500).json({ error: 'Erreur lors de la récupération des favoris' });
+  }
+});
+
+
+//Route pour ajouter/retirer un favoris
+app.post('/favorites/toggle', async (req, res) => {
+  const { legoId } = req.body;
+
+  if (!legoId) {
+    return res.status(400).json({ error: 'legoId requis' });
+  }
+
+  try {
+    const existing = await db.collection('favorites').findOne({ legoId });
+
+    if (existing) {
+      // Supprimer
+      await db.collection('favorites').deleteOne({ legoId });
+      return res.json({ message: 'Retiré des favoris' });
+    } else {
+      // Ajouter
+      await db.collection('favorites').insertOne({ legoId });
+      return res.json({ message: 'Ajouté aux favoris' });
+    }
+  } catch (err) {
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+
+// Route pour les indicateurs statistiques des ventes
+app.get('/sales/indicators', async (req, res) => {
+  const { legoSetId } = req.query;
+
+  if (!legoSetId) {
+    return res.status(400).json({ error: 'legoSetId requis' });
+  }
+
+  try {
+    const rawSales = await db.collection('sales')
+      .find({
+        lego_id: legoSetId,
+        "price.amount": { $ne: null }
+      })
+      .toArray();
+
+    if (!rawSales.length) {
+      return res.json({
+        count: 0,
+        p5: 0,
+        p25: 0,
+        p50: 0,
+        lifetimeDays: 0
+      });
+    }
+
+    // 🛠️ Parse les dates et prix
+    const sales = rawSales
+      .map(s => ({
+        price: parseFloat(s.price?.amount || 0),
+        published: new Date(s.published_time)
+      }))
+      .filter(s => !isNaN(s.price) && !isNaN(s.published.getTime()))
+      .sort((a, b) => a.published - b.published);
+
+    const prices = sales.map(s => s.price);
+    const count = prices.length;
+
+    const getPercentile = (arr, percentile) => {
+      const index = Math.floor(percentile * arr.length);
+      return arr[index] || 0;
+    };
+
+    const firstDate = sales[0].published;
+    const lastDate = sales[sales.length - 1].published;
+    const lifetimeDays = Math.max(0, Math.floor((lastDate - firstDate) / (1000 * 60 * 60 * 24)));
+
+    res.json({
+      count,
+      p5: getPercentile(prices, 0.05),
+      p25: getPercentile(prices, 0.25),
+      p50: getPercentile(prices, 0.5),
+      lifetimeDays
+    });
+  } catch (err) {
+    console.error('Erreur /sales/indicators :', err);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+
+
+
+
 
 
 
