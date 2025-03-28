@@ -245,13 +245,21 @@ app.get('/sales/indicators', async (req, res) => {
       });
     }
 
-    // 🛠️ Parse les dates et prix
+    // Fonction pour parser les dates "DD/MM/YYYY HH:mm:ss"
+    const parseFrDate = (str) => {
+      if (!str || typeof str !== 'string') return null;
+      const [datePart, timePart = '00:00:00'] = str.split(' ');
+      const [day, month, year] = datePart.split('/');
+      return new Date(`${year}-${month}-${day}T${timePart}`);
+    };
+
+    // Transforme les ventes en objets propres
     const sales = rawSales
       .map(s => ({
         price: parseFloat(s.price?.amount || 0),
-        published: new Date(s.published_time)
+        published: parseFrDate(s.published_time)
       }))
-      .filter(s => !isNaN(s.price) && !isNaN(s.published.getTime()))
+      .filter(s => !isNaN(s.price) && !isNaN(s.published?.getTime()))
       .sort((a, b) => a.published - b.published);
 
     const prices = sales.map(s => s.price);
@@ -273,11 +281,14 @@ app.get('/sales/indicators', async (req, res) => {
       p50: getPercentile(prices, 0.5),
       lifetimeDays
     });
+
   } catch (err) {
     console.error('Erreur /sales/indicators :', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 });
+
+
 
 
 

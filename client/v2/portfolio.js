@@ -414,7 +414,16 @@ const toggleFavorite = async (dealId) => {
 
     // Mettre à jour l'affichage si besoin
     await refreshFavorites();
-    render(currentDeals, currentPagination);
+
+    const isInFavoritesPage = document.getElementById('favorites-page')?.style.display === 'block';
+
+    if (isInFavoritesPage) {
+      const favoriteDeals = currentDeals.filter(deal => favorites.includes(deal.legoId));
+      render(favoriteDeals, currentPagination);
+    } else {
+      render(currentDeals, currentPagination);
+}
+
   } catch (error) {
     console.error('Erreur lors du toggle favori:', error);
   }
