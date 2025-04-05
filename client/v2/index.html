@@ -5,329 +5,336 @@
     <title>🧱 Lego | Predictability of a lego set deal</title>
 
     <style>
-
-
-/* PAGE D'ACCUEIL - home-page */
-#home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  text-align: center;
-  background: linear-gradient(135deg, #f0f4f8, #dbe9f4);
-  border-radius: 16px;
-  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-}
-
-#home-page h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-#home-page h2 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #444;
-}
-
-.home-buttons {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.home-buttons button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 18px 32px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  min-width: 200px;
-}
-
-.home-buttons button:hover {
-  background-color: #005dc1;
-  transform: scale(1.05);
-}
-
+      /* ----------------------
+          GLOBAL
+      ----------------------- */
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 20px;
+      }
+      
+      h1, h2 {
+        color: #333;
+      }
+      
+      section {
+        margin-bottom: 32px;
+      }
+      
+      /* ----------------------
+          PAGE D'ACCUEIL
+      ----------------------- */
+      #home-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        text-align: center;
+        background: linear-gradient(135deg, #f0f4f8, #dbe9f4);
+        border-radius: 16px;
+        box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+      }
+      
+      #home-page h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #222;
+      }
+      
+      #home-page h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: #444;
+      }
+      
+      .home-buttons {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .home-buttons button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 18px 32px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        min-width: 200px;
+      }
+      
+      .home-buttons button:hover {
+        background-color: #005dc1;
+        transform: scale(1.05);
+      }
+      
+      /* ----------------------
+          TOP BUTTONS
+      ----------------------- */
+      .top-buttons {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0 20px;
+        align-items: center;
+      }
+      
+      .back-btn,
+      #filter-favorites {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 8px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .back-btn {
+        background-color: #007bff;
+        color: white;
+      }
+      
+      .back-btn:hover {
+        background-color: #0062cc;
+      }
+      
+      #filter-favorites {
+        background-color: #ffd500;
+        color: #333;
+      }
+      
+      #filter-favorites:hover {
+        background-color: #e6bf00;
+      }
+      
+      /* ----------------------
+          OPTIONS / SELECTEURS
+      ----------------------- */
+      #options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 24px;
+        align-items: center;
+        justify-content: flex-start;
+        background: white;
+        padding: 12px 24px;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        margin-bottom: 20px;
+      }
+      
+      #options label,
+      #lego label {
+        font-weight: 500;
+        margin-right: 6px;
+      }
+      
+      #options select,
+      #lego select,
+      #sort-select,
+      #page-select,
+      #show-select {
+        padding: 6px 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 0.95rem;
+      }
+      
+      #filters input[type="button"] {
+        background-color: #eeeeee;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 6px 12px;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+      
+      #filters input[type="button"]:hover {
+        background-color: #ddd;
+      }
+      
+      /* ----------------------
+          INDICATEURS
+      ----------------------- */
+      #indicators {
+        background: white;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        margin-top: 20px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #indicators h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      
+      .indicator-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+      
+      .indicator-badge {
+        background-color: #f0f0f5;
+        border-radius: 12px;
+        padding: 12px 16px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #333;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 120px;
+        text-align: center;
+        transition: transform 0.2s ease;
+      }
+      
+      .indicator-badge:hover {
+        transform: scale(1.04);
+      }
+      
+      .indicator-badge span.value {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #000;
+        margin-top: 6px;
+      }
+      
+      /* ----------------------
+          DEALS
+      ----------------------- */
       .deal-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Avant c'était 280px */
-  gap: 16px; /* un peu moins d'espace */
-  padding: 16px;
-}
-
-
-.deal-card {
-  background-color: #fff;
-  border-radius: 10px; /* plus petit */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  padding: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.deal-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.deal-card img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 8px;
-}
-
-.deal-card h3 {
-  font-size: 0.95rem;
-  margin: 8px 0;
-}
-
-.deal-card p {
-  margin: 2px 0;
-  font-size: 0.85rem;
-}
-
-.deal-card a {
-  color: #007bff;
-  text-decoration: none;
-  margin-top: 10px;
-  font-weight: 500;
-}
-
-.deal-card a:hover {
-  text-decoration: underline;
-}
-
-.favorite-btn {
-  background-color: #ffd500;
-  border: none;
-  padding: 6px 12px;
-  font-size: 0.85rem;
-  border-radius: 8px;
-  font-weight: bold;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.favorite-btn:hover {
-  background-color: #ffca00;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f7fa;
-  margin: 0;
-  padding: 20px;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-section {
-  margin-bottom: 32px;
-}
-
-#options, #lego, #indicators {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-#options label,
-#lego label,
-#indicators span:first-child {
-  font-weight: bold;
-  margin-right: 6px;
-}
-
-#options select,
-#lego select,
-#sort-select,
-#page-select,
-#show-select {
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 0.95rem;
-}
-
-#filters input[type="button"] {
-  background-color: #eeeeee;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 6px 12px;
-  margin-right: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-#filters input[type="button"]:hover {
-  background-color: #ddd;
-}
-
-#filter-favorites {
-  background-color: #ffca00;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 12px;
-}
-
-#filter-favorites:hover {
-  background-color: #ffca00;
-}
-
-#indicators div {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-}
-
-#options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-#options > div {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-#lego {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-}
-
-#lego h2 {
-  margin-right: 10px;
-}
-
-#indicators {
-  padding: 20px;
-  margin: 20px;
-}
-
-#indicators h2 {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-}
-
-.indicator-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.indicator-badge {
-  background-color: #f0f0f5;
-  border-radius: 12px;
-  padding: 12px 16px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #333;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 120px;
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.indicator-badge:hover {
-  transform: scale(1.04);
-}
-
-.indicator-badge span.value {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #000;
-  margin-top: 6px;
-}
-
-.main-layout {
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-}
-
-#deals {
-  flex: 2;
-}
-
-#vinted-sales-section {
-  flex: 1;
-  background: #f8f8f8;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  max-height: 80vh;
-  overflow-y: auto;
-}
-
-.deal-card.selected-card {
-  border: 2px solid #007bff;
-  box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
-  background-color: #eef5ff;
-}
-
-#show-all {
-  background-color: #6c757d; 
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-left: 10px;
-  display: none; /* caché par défaut */
-}
-
-#show-all:hover {
-  background-color: #5a6268;
-}
-
-.back-btn {
-  background-color: #007bff; 
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 10px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-
-
-
-    </style>
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        padding: 16px;
+      }
+      
+      .deal-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        padding: 10px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .deal-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+      
+      .deal-card img {
+        max-width: 100%;
+        border-radius: 6px;
+        margin-bottom: 8px;
+      }
+      
+      .deal-card h3 {
+        font-size: 0.95rem;
+        margin: 8px 0;
+      }
+      
+      .deal-card p {
+        margin: 2px 0;
+        font-size: 0.85rem;
+      }
+      
+      .deal-card a {
+        color: #007bff;
+        text-decoration: none;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+      
+      .deal-card a:hover {
+        text-decoration: underline;
+      }
+      
+      .favorite-btn {
+        background-color: #ffd500;
+        border: none;
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        border-radius: 8px;
+        font-weight: bold;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+      
+      .favorite-btn:hover {
+        background-color: #ffca00;
+      }
+      
+      .deal-card.selected-card {
+        border: 2px solid #007bff;
+        box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
+        background-color: #eef5ff;
+      }
+      
+      /* ----------------------
+          SALES SECTION
+      ----------------------- */
+      .main-layout {
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+      }
+      
+      #deals {
+        flex: 2;
+      }
+      
+      #vinted-sales-section {
+        flex: 1;
+        background: #f8f8f8;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+      
+      /* ----------------------
+          BOUTON Show All
+      ----------------------- */
+      #show-all {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 10px;
+        display: none;
+      }
+      
+      #show-all:hover {
+        background-color: #5a6268;
+      }
+      </style>
+      
   </head>
   <body>
     <!-- PAGE 1: Home -->
@@ -344,12 +351,13 @@ section {
 
   <!-- PAGE 2: By Myself -->
   <section id="manual-page" style="display:none;">
-    <h1>Find the best deal!</h1>
-    <h2>You can search the best deal by yourself.</h2>
+    <h1>Find the best deal !</h1>
+    <h2>You can search the best deal by yourself. Don't hesitate to apply some filters below for the deals !</h2>
 
-    <button id="filter-favorites">Show Favorites</button>
     <button id="show-all" style="display:none;">Show All</button>
     <button onclick="showPage('home-page')" class="back-btn">← Back to Home</button>
+    <button id="filter-favorites">Show Favorites</button>
+    
 
     <section id="options">
       <div id="show">

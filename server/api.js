@@ -1,5 +1,3 @@
-// ATTENTION IMPORTANT : IL FAUT BIEN METTRE EN COMMENTAIRES LES DIFFERENTES FONCTIONS SINON CA PREND EN COMPTE UNIQUEMENT LA PREMIERE
-
 const cors = require('cors');
 const express = require('express');
 const helmet = require('helmet');
@@ -287,13 +285,6 @@ app.get('/sales/indicators', async (req, res) => {
     res.status(500).json({ error: 'Erreur serveur' });
   }
 });
-
-
-
-
-
-
-
 
 
 

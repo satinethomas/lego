@@ -402,32 +402,48 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 const toggleFavorite = async (dealId) => {
   try {
-    const response = await fetch('https://lego-ten.vercel.app/favorites/toggle', 
-      {
+    await fetch('https://lego-ten.vercel.app/favorites/toggle', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ legoId: dealId })
     });
 
-    const result = await response.json();
-    console.log(result.message);
-
-    // Mettre à jour l'affichage si besoin
     await refreshFavorites();
 
     const isInFavoritesPage = document.getElementById('favorites-page')?.style.display === 'block';
 
     if (isInFavoritesPage) {
-      const favoriteDeals = currentDeals.filter(deal => favorites.includes(deal.legoId));
-      render(favoriteDeals, currentPagination);
+      // On recharge tous les deals
+      const deals = await fetchDeals(1, 1000); // récupère tout pour pouvoir filtrer
+      const favoriteDeals = deals.result.filter(deal => favorites.includes(deal.legoId));
+
+      setCurrentDeals({
+        result: favoriteDeals,
+        meta: {
+          count: favoriteDeals.length,
+          currentPage: 1,
+          pageCount: 1
+        }
+      });
+
+      render(favoriteDeals, {
+        count: favoriteDeals.length,
+        currentPage: 1,
+        pageCount: 1
+      });
+
     } else {
       render(currentDeals, currentPagination);
-}
+    }
 
   } catch (error) {
     console.error('Erreur lors du toggle favori:', error);
   }
 };
+
+
+
+
 
 /**
  * Récupérer tous les favoris depuis l'API
@@ -439,12 +455,12 @@ const refreshFavorites = async () => {
     const response = await fetch('https://lego-ten.vercel.app/favorites');
     const data = await response.json();
     favorites = data.favorites || [];
-
-    console.log('Favoris actuels:', favorites);
   } catch (error) {
     console.error('Erreur lors du fetch des favoris:', error);
+    favorites = [];
   }
 };
+
 
 /**
  * Afficher uniquement les favoris
@@ -585,15 +601,15 @@ const fetchBestDeals = async () => {
 
 document.getElementById('btn-auto').addEventListener('click', () => {
   showPage('auto-page');
-  fetchBestDeals(); // ← ici on déclenche l’analyse
+  fetchBestDeals(); 
 });
 
 
 document.addEventListener('DOMContentLoaded', async () => {
   const deals = await fetchDeals();
-  setCurrentDeals(deals); // deals contient .result et .meta
+  setCurrentDeals(deals);
 
-  // Utilise directement la bonne pagination au premier render
-  render(deals.result, deals.meta);
+  render(deals.result, deals.meta); // ← ici tu passes bien les bons paramètres
 });
+
 
