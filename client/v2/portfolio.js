@@ -609,7 +609,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const deals = await fetchDeals();
   setCurrentDeals(deals);
 
-  render(deals.result, deals.meta); // ← ici tu passes bien les bons paramètres
+  render(deals.result, deals.meta); 
 });
 
 
